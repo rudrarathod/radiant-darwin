@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cv_staggered" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" app:cardBackgroundColor="#ffffffff" app:cardCornerRadius="4.0dip" app:cardElevation="1.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ayp_8dp">
+            <TextView android:textSize="16.0sp" android:id="@id/heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ayp_8dp" android:layout_marginEnd="@dimen/ayp_8dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

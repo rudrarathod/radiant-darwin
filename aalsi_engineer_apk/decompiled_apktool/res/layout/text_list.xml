@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/circle_bg_rounded_grey" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/ayp_8dp" />
+                <View android:background="@color/grayE5" android:layout_width="60.0dip" android:layout_height="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/circle_bg_rounded_grey" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/ayp_8dp" />
+                <View android:background="@color/grayE5" android:layout_width="60.0dip" android:layout_height="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/circle_bg_rounded_grey" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/ayp_8dp" />
+                <View android:background="@color/grayE5" android:layout_width="60.0dip" android:layout_height="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/circle_bg_rounded_grey" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/ayp_8dp" />
+                <View android:background="@color/grayE5" android:layout_width="60.0dip" android:layout_height="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/circle_bg_rounded_grey" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/ayp_8dp" />
+                <View android:background="@color/grayE5" android:layout_width="60.0dip" android:layout_height="15.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/dynamic_card_heading" />
+        <androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/cv_actions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:foregroundGravity="center">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/bgimage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="0.5dip" android:id="@id/recyclerView" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

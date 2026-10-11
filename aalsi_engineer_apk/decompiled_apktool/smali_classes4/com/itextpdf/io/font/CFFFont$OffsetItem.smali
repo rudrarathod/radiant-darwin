@@ -1,0 +1,45 @@
+.class public abstract Lcom/itextpdf/io/font/CFFFont$OffsetItem;
+.super Lcom/itextpdf/io/font/CFFFont$Item;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/itextpdf/io/font/CFFFont;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "OffsetItem"
+.end annotation
+
+
+# instance fields
+.field public value:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/itextpdf/io/font/CFFFont$Item;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public set(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/itextpdf/io/font/CFFFont$OffsetItem;->value:I
+
+    .line 2
+    .line 3
+    return-void
+.end method

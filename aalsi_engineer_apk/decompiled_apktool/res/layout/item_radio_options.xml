@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/cv_subcategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" app:cardCornerRadius="@dimen/_16sdp" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/ll_rb" android:paddingTop="@dimen/_3sdp" android:paddingBottom="@dimen/_3sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/_6sdp" android:paddingEnd="@dimen/_10sdp" android:paddingVertical="@dimen/_3sdp">
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/color_3C4852" android:gravity="center" android:id="@id/rb_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="Student" android:drawablePadding="0.0dip" android:buttonTint="@color/switch_radio_track_selector" style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

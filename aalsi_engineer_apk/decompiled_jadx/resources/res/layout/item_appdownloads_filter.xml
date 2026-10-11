@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_appDownloads_option"
+    android:background="@drawable/shape_rectangle_filled_white_outline_gray_r6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/ayp_16dp"
+    android:layout_marginBottom="@dimen/eight_dp"
+    android:layout_marginEnd="@dimen/_10sdp">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/gray100"
+        android:id="@+id/tv_option_text"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

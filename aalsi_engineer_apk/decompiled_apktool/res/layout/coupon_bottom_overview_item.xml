@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="5.0dip" app:cardElevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ayp_16dp" android:layout_marginTop="@dimen/aya_24dp" android:layout_marginRight="@dimen/ayp_16dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_282828" android:ellipsize="end" android:id="@id/couponType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="8" android:scrollHorizontally="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <LinearLayout android:id="@id/ll_Date1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ayp_8dp" android:layout_marginBottom="@dimen/ayp_16dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorText_Black_Alpha_99" android:ellipsize="end" android:id="@id/couponName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="15" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imgFootericon1" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitXY" android:tint="@color/colorText_Black_Alpha_99" app:srcCompat="@drawable/ic_clock_time" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorText_Black_Alpha_99" android:ellipsize="end" android:id="@id/couponVaidity" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="9.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@drawable/line_copy_42" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ayp_8dp" android:layout_marginBottom="@dimen/ayp_8dp">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/couponId" android:background="@drawable/coupon_bgdash" android:paddingLeft="@dimen/ayp_12dp" android:paddingTop="@dimen/ayp_8dp" android:paddingRight="@dimen/ayp_12dp" android:paddingBottom="@dimen/ayp_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/red3" android:gravity="right" android:layout_gravity="center" android:id="@id/couponAction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" />
+        </LinearLayout>
+        <View android:background="@drawable/line_copy_42" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

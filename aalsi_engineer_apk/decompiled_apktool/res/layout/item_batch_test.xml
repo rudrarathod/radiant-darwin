@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_header_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_header_text" android:background="@color/grayF1" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:paddingStart="16.0dip" android:paddingEnd="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_item" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/llAttemptTestContainer" android:layout_toStartOf="@id/llAttemptTestContainer">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff282828" android:ellipsize="end" android:gravity="start|center|top" android:id="@id/tv_test_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/ll_online_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginEnd="5.0dip">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/ForestGreen" android:background="@drawable/shape_online_test" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_online_test" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/ll_offline_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginEnd="5.0dip">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorSecondaryText" android:background="@drawable/shape_offline_test" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_test" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/ll_practice_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dip">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:background="@drawable/shape_practice_test" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/practice_test" />
+                        </LinearLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:id="@id/tv_assignee_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/llAttemptTestContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                    <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/btnAttemptTest" android:background="@drawable/bg_button_click_color_primary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:textAllCaps="false" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/red3" android:id="@id/tvAttemptsLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="start|center" android:id="@id/tv_test_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="start|center" android:id="@id/tv_test_date" android:layout_width="0.0dip" android:layout_height="fill_parent" android:drawablePadding="5.0dip" android:layout_weight="1.2" />
+                <LinearLayout android:gravity="end|center" android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/ll_marks" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.8">
+                    <TextView android:textSize="19.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_marks_obtained" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0sp" android:textColor="#ff777777" android:gravity="center" android:id="@id/tv_total_marks" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <include android:id="@id/common_layout_footer_gray" android:visibility="gone" layout="@layout/common_footer_layout_grayf1" />
+</LinearLayout>

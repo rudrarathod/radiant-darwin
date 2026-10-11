@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/root_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/eight_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/black" android:id="@id/filter_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <CheckBox android:id="@id/filter_checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

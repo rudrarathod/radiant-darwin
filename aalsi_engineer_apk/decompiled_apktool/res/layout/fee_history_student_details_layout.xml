@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_fee_details" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:gravity="start|center" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_history" />
+        <RelativeLayout android:background="@color/white" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorPrimaryText" android:id="@id/tv_text_total_fee_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/fee_history_student_details_layout_tv_text_total_fee_payment_text" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:id="@id/tv_text_by_online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fee_history_student_details_layout_tv_text_by_online_text" android:layout_below="@id/tv_text_total_fee_payment" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_fee_num_online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0" android:layout_toRightOf="@id/tv_text_by_online" android:layout_alignTop="@id/tv_text_by_online" android:layout_alignBottom="@id/tv_text_by_online" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:id="@id/tv_text_by_offline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/fee_history_student_details_layout_tv_text_by_offline_text" android:layout_toRightOf="@id/tv_fee_num_online" android:layout_below="@id/tv_text_total_fee_payment" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_fee_num_offline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0" android:layout_toRightOf="@id/tv_text_by_offline" android:layout_alignTop="@id/tv_text_by_offline" android:layout_alignBottom="@id/tv_text_by_offline" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorPrimaryText" android:id="@id/tv_total_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/common_footer_layout_gray91" />
+</LinearLayout>

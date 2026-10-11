@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_dp" android:layout_width="130.0dip" android:layout_height="130.0dip" />
+            <TextView android:textColor="@color/colorPrimary" android:id="@id/tv_change_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/change_dp" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_personal_details" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/personal_details" />
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:weightSum="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/name" android:layout_weight="1.0" />
+                    <EditText android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/et_name" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="50" android:layout_weight="2.0" android:inputType="textPersonName" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:weightSum="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mobile" android:layout_weight="1.0" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_mobile_no" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:weightSum="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/text_email" android:layout_weight="1.0" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_email" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:weightSum="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/about" android:layout_weight="1.0" />
+                    <EditText android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/et_bio" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" android:inputType="textShortMessage" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_bank_details" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bank_details" />
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:weightSum="2.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/beneficiary_name" android:layout_weight="1.0" />
+                    <EditText android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/et_beneficiary_name" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="textPersonName" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:weightSum="2.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_no" android:layout_weight="1.0" />
+                    <EditText android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/et_account_no" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:weightSum="2.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ifsc_code" android:layout_weight="1.0" />
+                    <EditText android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/et_ifsc_code" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

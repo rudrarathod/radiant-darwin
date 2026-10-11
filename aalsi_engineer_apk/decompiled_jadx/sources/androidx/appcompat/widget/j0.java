@@ -1,0 +1,105 @@
+package androidx.appcompat.widget;
+
+import android.R;
+import android.content.Context;
+import android.content.res.ColorStateList;
+import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.util.Log;
+import android.util.TypedValue;
+import android.view.View;
+
+/* loaded from: classes.dex */
+public class j0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final ThreadLocal f2718a = new ThreadLocal();
+
+    /* renamed from: b, reason: collision with root package name */
+    public static final int[] f2719b = {-16842910};
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final int[] f2720c = {R.attr.state_focused};
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final int[] f2721d = {R.attr.state_activated};
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final int[] f2722e = {R.attr.state_pressed};
+
+    /* renamed from: f, reason: collision with root package name */
+    public static final int[] f2723f = {R.attr.state_checked};
+
+    /* renamed from: g, reason: collision with root package name */
+    public static final int[] f2724g = {R.attr.state_selected};
+
+    /* renamed from: h, reason: collision with root package name */
+    public static final int[] f2725h = {-16842919, -16842908};
+
+    /* renamed from: i, reason: collision with root package name */
+    public static final int[] f2726i = new int[0];
+
+    /* renamed from: j, reason: collision with root package name */
+    public static final int[] f2727j = new int[1];
+
+    private j0() {
+    }
+
+    public static void a(View view, Context context) {
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(androidx.appcompat.R.styleable.AppCompatTheme);
+        try {
+            if (!obtainStyledAttributes.hasValue(androidx.appcompat.R.styleable.AppCompatTheme_windowActionBar)) {
+                Log.e("ThemeUtils", "View " + view.getClass() + " is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).");
+            }
+        } finally {
+            obtainStyledAttributes.recycle();
+        }
+    }
+
+    public static int b(Context context, int i11) {
+        ColorStateList e11 = e(context, i11);
+        if (e11 != null && e11.isStateful()) {
+            return e11.getColorForState(f2719b, e11.getDefaultColor());
+        }
+        TypedValue f11 = f();
+        context.getTheme().resolveAttribute(R.attr.disabledAlpha, f11, true);
+        return d(context, i11, f11.getFloat());
+    }
+
+    public static int c(Context context, int i11) {
+        int[] iArr = f2727j;
+        iArr[0] = i11;
+        n0 u11 = n0.u(context, null, iArr);
+        try {
+            return u11.b(0, 0);
+        } finally {
+            u11.x();
+        }
+    }
+
+    public static int d(Context context, int i11, float f11) {
+        return h4.a.k(c(context, i11), Math.round(Color.alpha(r0) * f11));
+    }
+
+    public static ColorStateList e(Context context, int i11) {
+        int[] iArr = f2727j;
+        iArr[0] = i11;
+        n0 u11 = n0.u(context, null, iArr);
+        try {
+            return u11.c(0);
+        } finally {
+            u11.x();
+        }
+    }
+
+    public static TypedValue f() {
+        ThreadLocal threadLocal = f2718a;
+        TypedValue typedValue = (TypedValue) threadLocal.get();
+        if (typedValue != null) {
+            return typedValue;
+        }
+        TypedValue typedValue2 = new TypedValue();
+        threadLocal.set(typedValue2);
+        return typedValue2;
+    }
+}

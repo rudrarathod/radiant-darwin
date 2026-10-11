@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_upcoming_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_date_divider" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="6.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_B3111111" android:gravity="center" android:id="@id/tv_upcoming_live_sheet_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:textAllCaps="true" />
+        <View android:id="@id/view_vertical_line" android:background="@color/gray_light" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+    <include layout="@layout/listitem_upcoming_live_classes_new" />
+</LinearLayout>

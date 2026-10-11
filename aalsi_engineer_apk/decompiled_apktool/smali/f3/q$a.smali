@@ -1,0 +1,141 @@
+.class public final Lf3/q$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lf3/q;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/i;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lf3/q$a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lf3/q;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lf3/q;->b()Lf3/q;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public final b()Lf3/q;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lf3/q;->c()Lf3/q;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public final c()Lf3/q;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lf3/q;->d()Lf3/q;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public final d()Lf3/q;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lf3/q;->e()Lf3/q;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public final e()Lf3/q;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lf3/q;->f()Lf3/q;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public final f()Lf3/q;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lf3/q;->g()Lf3/q;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public final g()Lf3/q;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lf3/q;->h()Lf3/q;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method

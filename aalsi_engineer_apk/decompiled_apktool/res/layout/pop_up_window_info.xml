@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" app:cardBackgroundColor="#e6ffffff" app:cardCornerRadius="@dimen/_6sdp" app:cardElevation="@dimen/_5sdp" app:cardUseCompatPadding="true" app:contentPadding="@dimen/_3sdp" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" android:textSize="@dimen/small_text" android:textColor="@color/colorGray" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_2sdp" android:text="@string/hand_raise_info" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

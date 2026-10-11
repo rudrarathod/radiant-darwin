@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grayF1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_view" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:foreground="?android:selectableItemBackground">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_batch_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:ellipsize="end" android:id="@id/tv_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:maxLines="2" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                <ImageView android:id="@id/iv_tutor" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/ic_logo" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center_vertical" android:id="@id/tv_tutor_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <include android:id="@id/common_layout_footer" layout="@layout/common_footer_layout_grayf1" />
+</LinearLayout>

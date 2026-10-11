@@ -1,0 +1,70 @@
+.class public abstract Lco/classplus/app/ui/common/chatV2/options/a$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lco/classplus/app/ui/common/chatV2/options/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public static synthetic a(Lco/classplus/app/ui/common/chatV2/options/a;Ljava/util/HashSet;ILjava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    if-nez p3, :cond_1
+
+    .line 2
+    .line 3
+    and-int/lit8 p2, p2, 0x1
+
+    .line 4
+    .line 5
+    if-eqz p2, :cond_0
+
+    .line 6
+    .line 7
+    new-instance p1, Ljava/util/HashSet;
+
+    .line 8
+    .line 9
+    const/4 p2, 0x0
+
+    .line 10
+    invoke-direct {p1, p2}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    invoke-interface {p0, p1}, Lco/classplus/app/ui/common/chatV2/options/a;->P3(Ljava/util/HashSet;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+
+    .line 17
+    :cond_1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 18
+    .line 19
+    const-string p1, "Super calls with default arguments not supported in this target, function: fetchCategories"
+
+    .line 20
+    .line 21
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    throw p0
+.end method

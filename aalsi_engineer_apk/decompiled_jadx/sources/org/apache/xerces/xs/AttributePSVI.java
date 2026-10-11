@@ -1,0 +1,6 @@
+package org.apache.xerces.xs;
+
+/* loaded from: classes5.dex */
+public interface AttributePSVI extends ItemPSVI {
+    XSAttributeDeclaration getAttributeDeclaration();
+}

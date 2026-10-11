@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/option_current" android:title="@string/current_students" app:showAsAction="never" />
+    <item android:id="@id/option_requested" android:title="@string/asked_to_join" app:showAsAction="never" />
+</menu>

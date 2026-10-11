@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lavVoice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="voice_animation.json"
+        app:lottie_loop="true"/>
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/btnStartStopRecording"
+        android:background="@drawable/bg_button_click_color_primary"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/layout_dialog_audio_record_btnStartStopRecording_text"/>
+</LinearLayout>

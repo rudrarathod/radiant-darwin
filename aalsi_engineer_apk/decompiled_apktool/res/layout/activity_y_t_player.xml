@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_yt_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <co.classplus.app.ui.common.youtube.player.views.YouTubePlayerView android:id="@id/youTubePlayerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/whatsAppShareBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/layout_playing_video_share" />
+</androidx.constraintlayout.widget.ConstraintLayout>

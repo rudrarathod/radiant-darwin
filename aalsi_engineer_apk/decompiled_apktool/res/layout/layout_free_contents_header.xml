@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/shimmer_free_content_horizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:padding="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/viewAll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_all" android:drawablePadding="@dimen/_2sdp" app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_24" app:drawableTint="@color/colorPrimary" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_heading" />
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_heading" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

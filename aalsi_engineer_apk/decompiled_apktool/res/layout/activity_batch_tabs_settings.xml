@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:layout_alignParentTop="true" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:background="@color/white" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/note_the_tab_order_is_the_order_in_which_your_students_will_see_info_on_your_batch_tap_and_hold_the_tab_card_to_reorder" />
+        <include layout="@layout/item_batch_tabs" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_tabs_order" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:tag="layout/rv_chat_layout_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/layoutMessageSent"
+        android:visibility="gone"
+        layout="@layout/item_message_sent"/>
+    <include
+        android:id="@+id/layoutMessageReceived"
+        android:visibility="gone"
+        layout="@layout/item_message_received"/>
+    <include
+        android:id="@+id/layoutRaisedHand"
+        android:visibility="gone"
+        layout="@layout/item_raised_hand"/>
+</LinearLayout>

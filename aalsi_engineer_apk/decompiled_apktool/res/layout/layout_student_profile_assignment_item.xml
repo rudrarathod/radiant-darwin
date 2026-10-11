@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:cardCornerRadius="0.0dip" app:cardElevation="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/tvAssignmentName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:maxLines="1" android:maxEms="10" android:scrollHorizontally="true" android:layout_toLeftOf="@id/ll_status_container" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/BaseTextAppearance.Title" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_status_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_hw_status" android:background="@drawable/shape_rectangle_filled_white_outline_gray_r17" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="110.0dip" android:layout_height="wrap_content" android:text="@string/not_submitted" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorText_Black_Alpha_99" android:id="@id/tvCreatorName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:scrollHorizontally="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/tvCalender" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/mdi_calendar_today" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/colorText_Black_Alpha_99" android:gravity="start" android:id="@id/tvDate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_weight="1.0" android:layout_marginStart="9.0dip" style="@style/BaseTextAppearance.SubTitle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

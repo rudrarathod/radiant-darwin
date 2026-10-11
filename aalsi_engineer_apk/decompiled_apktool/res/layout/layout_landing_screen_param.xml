@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" />
+    <RelativeLayout android:id="@id/rlParamName" android:background="@drawable/bg_round_empty_gray" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tvParamName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/ivDropDown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="#90000000" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_keyboard_arrow_down_24dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rlHeader" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#de000000" android:id="@id/tvInstallmentName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/ivExpandCollapse" android:layout_alignParentStart="true" />
+            <ImageView android:id="@id/ivExpandCollapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="#90000000" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_keyboard_arrow_down_24dp" />
+            <TextView android:textSize="14.0sp" android:textColor="#de000000" android:id="@id/tvScheme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/tvInstallmentName" />
+            <TextView android:textSize="14.0sp" android:textColor="#de000000" android:id="@id/tvEffectiveTenure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/tvInstallmentName" android:textAlignment="textEnd" android:layout_toEndOf="@id/tvScheme" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <View android:background="#10000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:baselineAligned="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min_price" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvMinPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/layout_item_ezcredit_scheme_tvMinPrice_text" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_price" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvMaxPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/layout_item_ezcredit_scheme_tvMaxPrice_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:baselineAligned="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_emi" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvTotalEmi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/layout_item_ezcredit_scheme_tvTotalEmi_text" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downpayment" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvDownpayment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="2" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:baselineAligned="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/processing_fee" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvProcessingFee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="-" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subvention_charges" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvSubventionCharges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/layout_item_ezcredit_scheme_tvSubventionCharges_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_blue_corner_radius_2" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_ezcredit_colored" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/tvEzCreditLearnMore" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="student">
+        <item quantity="other">%1$s học viên</item>
+        <item quantity="one">%1$s học viên</item>
+    </plurals>
+    <plurals name="x_answer_sheet">
+        <item quantity="other">Your Answers (%d Files)</item>
+        <item quantity="one">Your Answers (%d File)</item>
+    </plurals>
+    <plurals name="x_archived_batch">
+        <item quantity="other">%1$d CÁC NHÓM ĐƯỢC LƯU TRỮ</item>
+        <item quantity="one">%1$d NHÓM ĐƯỢC LƯU TRỮ</item>
+    </plurals>
+    <plurals name="x_attempts_allowed">
+        <item quantity="other">* %d Nỗ lực cho phép</item>
+        <item quantity="one">* %d cố gắng cho phép</item>
+    </plurals>
+    <plurals name="x_attempts_remaining">
+        <item quantity="other">* %d attempts remaining</item>
+        <item quantity="one">* %d attempt remaining</item>
+    </plurals>
+    <plurals name="x_batch">
+        <item quantity="other">%1$d LỚP HỌC</item>
+        <item quantity="one">%1$d: LỚP HỌC</item>
+    </plurals>
+    <plurals name="x_files_no">
+        <item quantity="other">"%d
+Các tập tin"</item>
+        <item quantity="one">"%d
+Tập tin"</item>
+    </plurals>
+    <plurals name="x_new_notifications">
+        <item quantity="other">%d thông báo mới</item>
+        <item quantity="one">%d thông báo mới</item>
+    </plurals>
+    <plurals name="x_question_paper">
+        <item quantity="other">Trang câu hỏi - %d Tệp</item>
+    </plurals>
+    <plurals name="x_recipients_with_size">
+        <item quantity="other">%d RECIPIENTS</item>
+        <item quantity="one">%d RECIPIENT</item>
+    </plurals>
+    <plurals name="x_test_no">
+        <item quantity="other">"%d
+Kiểm tra"</item>
+        <item quantity="one">"%d
+Bài kiểm tra"</item>
+    </plurals>
+    <plurals name="x_unread_messages">
+        <item quantity="other">%d TIN NHẮN CHƯA ĐỌC</item>
+    </plurals>
+    <plurals name="x_videos_no">
+        <item quantity="other">"%d
+Videos"</item>
+        <item quantity="one">"%d
+Video"</item>
+    </plurals>
+</resources>

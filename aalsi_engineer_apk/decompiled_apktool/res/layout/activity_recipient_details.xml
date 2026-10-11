@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <include android:id="@id/sv_recipient" android:visibility="visible" layout="@layout/common_search" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_recipient_header" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sv_recipient">
+        <TextView android:textSize="16.0sp" android:textColor="#ff777777" android:gravity="bottom" android:layout_gravity="center" android:id="@id/tv_batches_label" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:gravity="center|right" android:layout_gravity="center" android:id="@id/tv_recipient_select_all" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_all" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_all_recipients" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_above="@id/cv_done" android:layout_below="@id/ll_recipient_header" />
+    <androidx.cardview.widget.CardView android:id="@id/cv_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_alignParentBottom="true" app:cardElevation="10.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/b_done" android:background="@drawable/bg_button_click_color_primary" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/done_caps" android:textAllCaps="false" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

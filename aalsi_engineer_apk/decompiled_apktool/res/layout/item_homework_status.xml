@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_student_card" android:background="@color/white" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_image" android:layout_width="40.0dip" android:layout_height="42.0dip" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_dp" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_late" android:background="@drawable/shape_rectangle_filled_red_r2_borderless_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_homework_status_tv_late_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/tv_hw_status" android:layout_toEndOf="@id/rl_image">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_student_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorSecondaryText" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_attachment_count" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_homework_status_tv_attachment_count_text" android:maxLines="1" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_hw_status" android:background="@drawable/shape_rectangle_filled_white_outline_gray_r17" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="110.0dip" android:layout_height="wrap_content" android:text="@string/not_submitted" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <CheckBox android:id="@id/cb_hw_status" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_option" android:background="@color/white" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_option" android:layout_width="30.0dip" android:layout_height="30.0dip" android:adjustViewBounds="true" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_call_green" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/tv_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:singleLine="false" android:layout_below="@id/iv_option" />
+</RelativeLayout>

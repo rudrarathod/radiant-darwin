@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/owner" android:textAllCaps="true" />
+                <RelativeLayout android:id="@id/rl_owner" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                    <include layout="@layout/item_name_number_chevron" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_caretakers" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/activity_caretaker_settings_tv_caretakers_text" android:textAllCaps="true" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_caretakers" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="15.0dip" />
+            <View android:background="@color/gray89" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/royalblue" android:gravity="center" android:id="@id/tv_add_caretaker" android:background="@color/white" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:text="@string/activity_caretaker_settings_tv_add_caretaker_text" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

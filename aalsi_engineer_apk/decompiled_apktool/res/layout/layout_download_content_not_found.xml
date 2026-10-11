@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_study_material" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_empty_title" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="No content here!" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_empty_description" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Don’t seem to find the what you are looking for. Please try again." />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_price_details" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/resale_pricing" />
+    <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/min_course_value_for_reseller" android:layout_weight="2.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="end|center" android:id="@id/tv_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_on_resale" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="end|center" android:id="@id/tv_discount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_discount_price_info" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <ImageView android:layout_gravity="top" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:tint="@color/gray79" android:cropToPadding="false" app:srcCompat="@drawable/ic_info" />
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/tv_discount_price_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:tint="@color/gray79" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/absent_red" android:gravity="center" android:id="@id/btn_done" android:background="@color/intercom_full_transparent_full_white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/done" />
+</LinearLayout>

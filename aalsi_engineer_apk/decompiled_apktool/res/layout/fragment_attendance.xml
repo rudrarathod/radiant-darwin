@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_attendance" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_no_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fragment_attendance_tv_no_items_text" android:layout_centerInParent="true" />
+</RelativeLayout>

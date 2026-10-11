@@ -1,0 +1,108 @@
+.class public final Lve/b;
+.super Lco/classplus/app/ui/base/BasePresenter;
+.source "SourceFile"
+
+# interfaces
+.implements Lve/a;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(Lco/classplus/app/data/DataManager;Lei/a;Ljx/a;)V
+    .locals 1
+    .annotation runtime Ljavax/inject/Inject;
+    .end annotation
+
+    .line 1
+    const-string v0, "dataManager"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "schedulerProvider"
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v0, "compositeDisposable"
+
+    .line 12
+    .line 13
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {p0, p1, p2, p3}, Lco/classplus/app/ui/base/BasePresenter;-><init>(Lco/classplus/app/data/DataManager;Lei/a;Ljx/a;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+.end method
+
+
+# virtual methods
+.method public r()Z
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lco/classplus/app/ui/base/BasePresenter;->g()Lco/classplus/app/data/DataManager;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lco/classplus/app/data/DataManager;->getCurrentUserLoggedInMode()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    sget-object v1, Lco/classplus/app/utils/d$m0;->MODE_LOGGED_IN:Lco/classplus/app/utils/d$m0;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Lco/classplus/app/utils/d$m0;->getType()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    if-ne v0, v1, :cond_0
+
+    .line 16
+    .line 17
+    const/4 v0, 0x1
+
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 20
+    :goto_0
+    return v0
+.end method

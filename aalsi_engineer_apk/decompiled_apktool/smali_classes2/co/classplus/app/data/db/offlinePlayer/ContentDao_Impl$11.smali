@@ -1,0 +1,49 @@
+.class Lco/classplus/app/data/db/offlinePlayer/ContentDao_Impl$11;
+.super Landroidx/room/e0;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lco/classplus/app/data/db/offlinePlayer/ContentDao_Impl;-><init>(Landroidx/room/x;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lco/classplus/app/data/db/offlinePlayer/ContentDao_Impl;
+
+
+# direct methods
+.method public constructor <init>(Lco/classplus/app/data/db/offlinePlayer/ContentDao_Impl;Landroidx/room/x;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lco/classplus/app/data/db/offlinePlayer/ContentDao_Impl$11;->this$0:Lco/classplus/app/data/db/offlinePlayer/ContentDao_Impl;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Landroidx/room/e0;-><init>(Landroidx/room/x;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public createQuery()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "UPDATE ContentItem SET video_max_count = ?,video_count_available=?,video_max_duration=?,video_duration_available=?,last_seek=?,is_duration_restricted=?,is_count_restricted=?,last_sync_time_stamp=?,expiry_date=?,course_name=?, original_course_id=?, subscriber_id=?,is_synced= 1 WHERE id = ?"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

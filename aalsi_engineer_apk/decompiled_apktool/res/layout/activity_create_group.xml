@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorPrimary" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:layout_collapseMode="pin" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="center_vertical" android:id="@id/iv_user_image" android:background="@drawable/shape_circle_gray_no_outline" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title_name" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+            <ImageView android:id="@id/iv_options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:tint="@color/white" android:contentDescription="@string/option" app:srcCompat="@drawable/ic_dots" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_btn_done" android:layout_below="@id/toolbar">
+        <com.google.android.material.appbar.AppBarLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/label_group_name" android:layout_marginStart="16.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                            <EditText android:textColorHint="@color/colorSecondaryText" android:id="@id/et_grp_name" android:background="@color/white" android:padding="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/label_hint_enter_group_name" android:maxLines="1" android:layout_weight="1.0" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/royalblue" android:gravity="start|center" android:id="@id/tv_edit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/edit" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_data" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_participants_group" android:background="#fff7f7f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/colorSecondaryText" android:gravity="start|center" android:id="@id/tv_participants_group" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/label_participants" android:textAllCaps="true" android:layout_marginStart="16.0dip" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/royalblue" android:gravity="start|center" android:id="@id/tv_add_participants_group" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:text="@string/add_participants" android:textAllCaps="true" android:layout_marginEnd="16.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <include layout="@layout/divider" />
+                            <include layout="@layout/common_search_new" />
+                            <include layout="@layout/divider" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" app:srcCompat="@drawable/ic_students_empty" />
+                        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/label_no_participants_to_show" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/label_no_recp" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/llAddParticipants" android:background="@color/white" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:baselineAligned="false">
+                        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutImage" android:background="@drawable/shape_circle_color_primary" android:layout_width="44.0dip" android:layout_height="44.0dip">
+                            <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_add_participants" />
+                        </RelativeLayout>
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_participants" android:layout_marginStart="16.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_participants" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_btn_done" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_done" android:background="@drawable/bg_button_click_color_primary" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="8.0dip" android:text="@string/label_create" android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

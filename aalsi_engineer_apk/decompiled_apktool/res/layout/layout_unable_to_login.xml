@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_arrow_back" app:tint="@color/gray_deep_dark" />
+    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/gray_deep_dark" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/unable_to_login" android:lineSpacingExtra="4.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:id="@id/tv_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/phone_number_already_registered_unable_to_login_msg" android:lineSpacingExtra="4.0dip" />
+    <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_action" android:background="@drawable/shape_rectangle_filled_primary_r8" android:paddingTop="12.0sp" android:paddingBottom="12.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="8.0dip" android:text="@string/close_app" android:textAllCaps="false" android:paddingVertical="12.0sp" android:textFontWeight="500" />
+</LinearLayout>

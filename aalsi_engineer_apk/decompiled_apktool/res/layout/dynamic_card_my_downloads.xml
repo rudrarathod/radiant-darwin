@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/_70sdp" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/cl_root" android:background="@color/white" android:padding="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+            <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_dummy_bkg" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_heading" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginStart="@dimen/_16sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_right_arrow" app:layout_constraintStart_toEndOf="@id/image" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                <TextView android:textSize="12.0sp" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:maxLines="1" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/iv_right_arrow" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:layout_marginStart="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ll_heading" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

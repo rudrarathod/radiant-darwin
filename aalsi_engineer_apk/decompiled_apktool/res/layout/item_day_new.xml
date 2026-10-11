@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_day" android:background="@drawable/shape_rectangle_filled_white_r7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_777777" android:gravity="center_vertical" android:id="@id/tv_day_name" android:padding="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAllCaps="true" style="@style/BaseTextAppearance.Title" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/red3" android:id="@id/tv_remove_day" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/remove" android:textAllCaps="true" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_timing" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textColor="#ff009ae0" android:gravity="center_horizontal" android:id="@id/tv_add_new" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/item_day_new_tv_add_new_text" />
+    </LinearLayout>
+</RelativeLayout>

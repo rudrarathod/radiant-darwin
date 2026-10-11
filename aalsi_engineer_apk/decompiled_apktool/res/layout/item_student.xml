@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/ayp_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_student_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_launcher" />
+        <TextView android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_student_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:maxLines="2" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/BaseTextAppearance.Title" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_waiting_to_join" android:background="@drawable/waiting_to_join_shape" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/on_sms" android:layout_marginEnd="15.0dip" />
+        <ImageView android:id="@id/iv_dots" android:padding="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_dots_black" />
+    </LinearLayout>
+</LinearLayout>

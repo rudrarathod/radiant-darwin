@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#de000000" android:id="@id/tv_option_header" android:paddingLeft="24.0dip" android:paddingTop="24.0dip" android:paddingRight="24.0dip" android:paddingBottom="24.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/assignment_status" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="28.0dip" app:srcCompat="@drawable/ic_close_cross_black" />
+    </LinearLayout>
+    <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_submitted" android:background="@drawable/shape_rectangle_filled_white_outline_gray_r17" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="110.0dip" android:layout_height="wrap_content" android:text="@string/submitted" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/DE000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/label_submitted" />
+        <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_approved" android:background="@drawable/shape_rectangle_filled_white_outline_gray_r17" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/approved" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/DE000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/label_approved" />
+        <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_rejected" android:background="@drawable/shape_rectangle_filled_white_outline_gray_r17" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/rejected" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/DE000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/label_rejected" />
+        <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_info" android:focusable="true" android:clickable="true" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginTop="3.0dip" android:tint="@color/gray_dark" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:srcCompat="@drawable/information_circular_button_symbol__1_" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_best_practice" android:layout_toEndOf="@id/iv_info" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" />
+    <Button android:textSize="14.0sp" android:textColor="@color/button_color" android:gravity="center" android:id="@id/tv_cancel" android:background="@color/white" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/done_caps" android:textAllCaps="true" style="@style/Widget.MaterialComponents.Button.TextButton" />
+</LinearLayout>

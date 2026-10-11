@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_add_to_enquiry"
+        android:title="@string/add_to_enquiry"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_add_to_batch"
+        android:title="@string/add_to_batch"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_call_outline"
+        android:id="@+id/item_call"
+        android:title="@string/call"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_message"
+        android:id="@+id/item_msg"
+        android:title="@string/sms"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_edit_pencil"
+        android:enabled="false"
+        android:id="@+id/item_edit"
+        android:visible="false"
+        android:title="@string/edit"
+        app:showAsAction="never"/>
+</menu>

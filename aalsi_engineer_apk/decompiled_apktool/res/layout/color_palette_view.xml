@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/color_palette_view_0" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_color_black" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_black" android:scaleX="1.5" android:scaleY="1.5" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    <ImageView android:id="@id/image_color_red" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_red" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    <ImageView android:id="@id/image_color_yellow" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_yellow" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    <ImageView android:id="@id/image_color_green" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_green" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    <ImageView android:id="@id/image_color_blue" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_blue" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    <ImageView android:id="@id/image_color_pink" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_pink" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    <ImageView android:id="@id/image_color_brown" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/circle_brown" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+</LinearLayout>

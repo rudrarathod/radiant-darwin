@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.PlayerView android:id="@id/player_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:animation_enabled="false" app:controller_layout_id="@layout/custom_exo_controls_b" app:repeat_toggle_modes="one" app:resize_mode="fixed_width" app:show_buffering="always" app:surface_type="texture_view" app:use_controller="true" />
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:id="@id/rotationView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:shadowColor="@color/DE000000" android:shadowDx="3.0" android:shadowDy="3.0" android:shadowRadius="4.0" android:alpha="0.4" />
+    <View android:id="@id/blank_view" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_exo_watermark" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_margin="16.0dip" android:alpha="0.8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/llWinPoints" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/rlWinCard" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <ImageView android:id="@id/ivWinCardPoints" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_win_points" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvWinCardPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/layout_win_points_item_tvWinCardPoints_text" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/ivWinCardPoints" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

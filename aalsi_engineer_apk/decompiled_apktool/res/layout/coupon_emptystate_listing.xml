@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/courses_empty_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/coupon_listing_empty" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_black_87_opacity" android:id="@id/courses_empty_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="@dimen/ayp_16dp" android:layout_marginRight="40.0dip" android:text="@string/coupon_emptystate_listing_courses_empty_title_text_text" android:singleLine="false" android:lineSpacingExtra="3.0sp" android:inputType="textMultiLine" android:textAlignment="center" />
+            <TextView android:textAppearance="@style/empty_subhead" android:gravity="center|top" android:id="@id/courses__empty_subtitle_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/coupon_emptystate_listing_courses__empty_subtitle_text_text" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:lineSpacingExtra="4.0sp" android:alpha="0.6" android:translationY="-2.149994sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

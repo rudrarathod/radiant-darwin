@@ -1,0 +1,45 @@
+.class public abstract Lcom/itextpdf/commons/actions/sequence/AbstractIdentifiableElement;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private sequenceId:Lcom/itextpdf/commons/actions/sequence/SequenceId;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public getSequenceId()Lcom/itextpdf/commons/actions/sequence/SequenceId;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/itextpdf/commons/actions/sequence/AbstractIdentifiableElement;->sequenceId:Lcom/itextpdf/commons/actions/sequence/SequenceId;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public setSequenceId(Lcom/itextpdf/commons/actions/sequence/SequenceId;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/itextpdf/commons/actions/sequence/AbstractIdentifiableElement;->sequenceId:Lcom/itextpdf/commons/actions/sequence/SequenceId;
+
+    .line 2
+    .line 3
+    return-void
+.end method

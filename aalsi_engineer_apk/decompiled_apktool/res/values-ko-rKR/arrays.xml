@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="live_class_camera_devices">
+        <item>안드로이드 후방 카메라</item>
+        <item>안드로이드 정면 카메라</item>
+    </string-array>
+    <string-array name="live_class_mic_devices">
+        <item>안드로이드 마이크</item>
+    </string-array>
+    <string-array name="splash_revamp_sub_text">
+        <item>모든 학습 요구 사항을 충족하는 이동 앱</item>
+        <item>성공에 도움이 되도록 구성된 학습 자료에 액세스</item>
+        <item>채팅 기능을 사용하여 연중무휴 24시간 연결 상태를 유지하세요.</item>
+    </string-array>
+    <string-array name="splash_revamp_text">
+        <item>구조화된 콘텐츠</item>
+        <item>커뮤니케이션에 관한 모든 것</item>
+    </string-array>
+</resources>

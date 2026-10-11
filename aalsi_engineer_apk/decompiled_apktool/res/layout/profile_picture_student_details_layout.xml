@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_dp" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/colorPrimaryText" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_joining_status" android:background="@drawable/bg_rounded_grey" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/on_sms" />
+</LinearLayout>

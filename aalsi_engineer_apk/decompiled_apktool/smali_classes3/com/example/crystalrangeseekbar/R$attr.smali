@@ -1,0 +1,484 @@
+.class public final Lcom/example/crystalrangeseekbar/R$attr;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/example/crystalrangeseekbar/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "attr"
+.end annotation
+
+
+# static fields
+.field public static actionBarDivider:I = 0x7f040002
+
+.field public static actionBarItemBackground:I = 0x7f040003
+
+.field public static actionBarPopupTheme:I = 0x7f040004
+
+.field public static actionBarSize:I = 0x7f040005
+
+.field public static actionBarSplitStyle:I = 0x7f040006
+
+.field public static actionBarStyle:I = 0x7f040007
+
+.field public static actionBarTabBarStyle:I = 0x7f040008
+
+.field public static actionBarTabStyle:I = 0x7f040009
+
+.field public static actionBarTabTextStyle:I = 0x7f04000a
+
+.field public static actionBarTheme:I = 0x7f04000b
+
+.field public static actionBarWidgetTheme:I = 0x7f04000c
+
+.field public static actionButtonStyle:I = 0x7f04000d
+
+.field public static actionDropDownStyle:I = 0x7f04000e
+
+.field public static actionLayout:I = 0x7f04000f
+
+.field public static actionMenuTextAppearance:I = 0x7f040010
+
+.field public static actionMenuTextColor:I = 0x7f040011
+
+.field public static actionModeBackground:I = 0x7f040012
+
+.field public static actionModeCloseButtonStyle:I = 0x7f040013
+
+.field public static actionModeCloseDrawable:I = 0x7f040015
+
+.field public static actionModeCopyDrawable:I = 0x7f040016
+
+.field public static actionModeCutDrawable:I = 0x7f040017
+
+.field public static actionModeFindDrawable:I = 0x7f040018
+
+.field public static actionModePasteDrawable:I = 0x7f040019
+
+.field public static actionModePopupWindowStyle:I = 0x7f04001a
+
+.field public static actionModeSelectAllDrawable:I = 0x7f04001b
+
+.field public static actionModeShareDrawable:I = 0x7f04001c
+
+.field public static actionModeSplitBackground:I = 0x7f04001d
+
+.field public static actionModeStyle:I = 0x7f04001e
+
+.field public static actionModeWebSearchDrawable:I = 0x7f040020
+
+.field public static actionOverflowButtonStyle:I = 0x7f040021
+
+.field public static actionOverflowMenuStyle:I = 0x7f040022
+
+.field public static actionProviderClass:I = 0x7f040023
+
+.field public static actionViewClass:I = 0x7f040025
+
+.field public static activityChooserViewStyle:I = 0x7f04002a
+
+.field public static alertDialogButtonGroupStyle:I = 0x7f04002e
+
+.field public static alertDialogCenterButtons:I = 0x7f04002f
+
+.field public static alertDialogStyle:I = 0x7f040030
+
+.field public static alertDialogTheme:I = 0x7f040031
+
+.field public static allowStacking:I = 0x7f040034
+
+.field public static arrowHeadLength:I = 0x7f040053
+
+.field public static arrowShaftLength:I = 0x7f040054
+
+.field public static autoCompleteTextViewStyle:I = 0x7f040059
+
+.field public static background:I = 0x7f040064
+
+.field public static backgroundSplit:I = 0x7f04006b
+
+.field public static backgroundStacked:I = 0x7f04006c
+
+.field public static backgroundTint:I = 0x7f04006d
+
+.field public static backgroundTintMode:I = 0x7f04006e
+
+.field public static barLength:I = 0x7f040089
+
+.field public static bar_color:I = 0x7f04008a
+
+.field public static bar_highlight_color:I = 0x7f04008d
+
+.field public static borderlessButtonStyle:I = 0x7f0400a1
+
+.field public static buttonBarButtonStyle:I = 0x7f0400b5
+
+.field public static buttonBarNegativeButtonStyle:I = 0x7f0400b6
+
+.field public static buttonBarNeutralButtonStyle:I = 0x7f0400b7
+
+.field public static buttonBarPositiveButtonStyle:I = 0x7f0400b8
+
+.field public static buttonBarStyle:I = 0x7f0400b9
+
+.field public static buttonPanelSideLayout:I = 0x7f0400c0
+
+.field public static buttonStyle:I = 0x7f0400c2
+
+.field public static buttonStyleSmall:I = 0x7f0400c3
+
+.field public static buttonTint:I = 0x7f0400c4
+
+.field public static buttonTintMode:I = 0x7f0400c5
+
+.field public static checkboxStyle:I = 0x7f0400ea
+
+.field public static checkedTextViewStyle:I = 0x7f0400f5
+
+.field public static closeIcon:I = 0x7f040125
+
+.field public static closeItemLayout:I = 0x7f04012c
+
+.field public static collapseContentDescription:I = 0x7f04012d
+
+.field public static collapseIcon:I = 0x7f04012e
+
+.field public static color:I = 0x7f040138
+
+.field public static colorAccent:I = 0x7f040139
+
+.field public static colorButtonNormal:I = 0x7f04013b
+
+.field public static colorControlActivated:I = 0x7f04013d
+
+.field public static colorControlHighlight:I = 0x7f04013e
+
+.field public static colorControlNormal:I = 0x7f04013f
+
+.field public static colorPrimary:I = 0x7f040159
+
+.field public static colorPrimaryDark:I = 0x7f04015b
+
+.field public static colorSwitchThumbNormal:I = 0x7f040171
+
+.field public static commitIcon:I = 0x7f040188
+
+.field public static contentInsetEnd:I = 0x7f040193
+
+.field public static contentInsetLeft:I = 0x7f040195
+
+.field public static contentInsetRight:I = 0x7f040196
+
+.field public static contentInsetStart:I = 0x7f040197
+
+.field public static controlBackground:I = 0x7f0401a2
+
+.field public static corner_radius:I = 0x7f0401b1
+
+.field public static customNavigationLayout:I = 0x7f0401e4
+
+.field public static data_type:I = 0x7f0401e9
+
+.field public static defaultQueryHint:I = 0x7f0401f0
+
+.field public static dialogPreferredPadding:I = 0x7f0401f8
+
+.field public static dialogTheme:I = 0x7f0401f9
+
+.field public static displayOptions:I = 0x7f0401fb
+
+.field public static divider:I = 0x7f0401fc
+
+.field public static dividerHorizontal:I = 0x7f040201
+
+.field public static dividerPadding:I = 0x7f040204
+
+.field public static dividerVertical:I = 0x7f040206
+
+.field public static drawableSize:I = 0x7f040224
+
+.field public static drawerArrowStyle:I = 0x7f04022a
+
+.field public static dropDownListViewStyle:I = 0x7f04022e
+
+.field public static dropdownListPreferredItemHeight:I = 0x7f04022f
+
+.field public static editTextBackground:I = 0x7f040233
+
+.field public static editTextColor:I = 0x7f040234
+
+.field public static editTextStyle:I = 0x7f040235
+
+.field public static elevation:I = 0x7f040236
+
+.field public static expandActivityOverflowButtonDrawable:I = 0x7f040258
+
+.field public static fix_gap:I = 0x7f04027c
+
+.field public static gap:I = 0x7f0402bd
+
+.field public static gapBetweenBars:I = 0x7f0402be
+
+.field public static goIcon:I = 0x7f0402c0
+
+.field public static height:I = 0x7f0402c6
+
+.field public static hideOnContentScroll:I = 0x7f0402ce
+
+.field public static homeAsUpIndicator:I = 0x7f0402d6
+
+.field public static homeLayout:I = 0x7f0402d7
+
+.field public static icon:I = 0x7f0402db
+
+.field public static iconifiedByDefault:I = 0x7f0402e3
+
+.field public static imageButtonStyle:I = 0x7f0402e8
+
+.field public static indeterminateProgressStyle:I = 0x7f0402f2
+
+.field public static initialActivityCount:I = 0x7f0402fe
+
+.field public static isLightTheme:I = 0x7f040300
+
+.field public static itemPadding:I = 0x7f04030e
+
+.field public static layout:I = 0x7f040334
+
+.field public static left_thumb_color:I = 0x7f040387
+
+.field public static left_thumb_color_pressed:I = 0x7f040388
+
+.field public static left_thumb_image:I = 0x7f040389
+
+.field public static left_thumb_image_pressed:I = 0x7f04038a
+
+.field public static listChoiceBackgroundIndicator:I = 0x7f040392
+
+.field public static listDividerAlertDialog:I = 0x7f040395
+
+.field public static listItemLayout:I = 0x7f040396
+
+.field public static listLayout:I = 0x7f040397
+
+.field public static listPopupWindowStyle:I = 0x7f040399
+
+.field public static listPreferredItemHeight:I = 0x7f04039a
+
+.field public static listPreferredItemHeightLarge:I = 0x7f04039b
+
+.field public static listPreferredItemHeightSmall:I = 0x7f04039c
+
+.field public static listPreferredItemPaddingLeft:I = 0x7f04039e
+
+.field public static listPreferredItemPaddingRight:I = 0x7f04039f
+
+.field public static logo:I = 0x7f0403a2
+
+.field public static logoDescription:I = 0x7f0403a4
+
+.field public static maxButtonHeight:I = 0x7f0403f4
+
+.field public static max_start_value:I = 0x7f0403fd
+
+.field public static max_value:I = 0x7f0403fe
+
+.field public static measureWithLargestChild:I = 0x7f0403ff
+
+.field public static min_start_value:I = 0x7f040409
+
+.field public static min_value:I = 0x7f04040a
+
+.field public static multiChoiceItemLayout:I = 0x7f04043f
+
+.field public static navigationContentDescription:I = 0x7f040440
+
+.field public static navigationIcon:I = 0x7f040441
+
+.field public static navigationMode:I = 0x7f040443
+
+.field public static overlapAnchor:I = 0x7f040458
+
+.field public static paddingEnd:I = 0x7f04045c
+
+.field public static paddingStart:I = 0x7f04045f
+
+.field public static panelBackground:I = 0x7f040466
+
+.field public static panelMenuListTheme:I = 0x7f040467
+
+.field public static panelMenuListWidth:I = 0x7f040468
+
+.field public static popupMenuStyle:I = 0x7f0404ac
+
+.field public static popupTheme:I = 0x7f0404ad
+
+.field public static popupWindowStyle:I = 0x7f0404ae
+
+.field public static position:I = 0x7f0404af
+
+.field public static preserveIconSpacing:I = 0x7f0404b3
+
+.field public static progressBarPadding:I = 0x7f0404b6
+
+.field public static progressBarStyle:I = 0x7f0404b7
+
+.field public static queryBackground:I = 0x7f0404bb
+
+.field public static queryHint:I = 0x7f0404bc
+
+.field public static radioButtonStyle:I = 0x7f0404be
+
+.field public static ratingBarStyle:I = 0x7f0404c1
+
+.field public static ratingBarStyleIndicator:I = 0x7f0404c2
+
+.field public static ratingBarStyleSmall:I = 0x7f0404c3
+
+.field public static right_thumb_color:I = 0x7f0404d5
+
+.field public static right_thumb_color_pressed:I = 0x7f0404d6
+
+.field public static right_thumb_image:I = 0x7f0404d7
+
+.field public static right_thumb_image_pressed:I = 0x7f0404d8
+
+.field public static searchHintIcon:I = 0x7f0404ed
+
+.field public static searchIcon:I = 0x7f0404ee
+
+.field public static searchViewStyle:I = 0x7f0404f0
+
+.field public static seekBarStyle:I = 0x7f0404f1
+
+.field public static selectableItemBackground:I = 0x7f0404f2
+
+.field public static selectableItemBackgroundBorderless:I = 0x7f0404f3
+
+.field public static showAsAction:I = 0x7f040519
+
+.field public static showDividers:I = 0x7f04051e
+
+.field public static showText:I = 0x7f040524
+
+.field public static singleChoiceItemLayout:I = 0x7f04053c
+
+.field public static spinBars:I = 0x7f040548
+
+.field public static spinnerDropDownItemStyle:I = 0x7f040549
+
+.field public static spinnerStyle:I = 0x7f04054a
+
+.field public static splitTrack:I = 0x7f04054b
+
+.field public static srcCompat:I = 0x7f040551
+
+.field public static state_above_anchor:I = 0x7f04055b
+
+.field public static steps:I = 0x7f040567
+
+.field public static submitBackground:I = 0x7f040570
+
+.field public static subtitle:I = 0x7f040571
+
+.field public static subtitleTextAppearance:I = 0x7f040573
+
+.field public static subtitleTextColor:I = 0x7f040574
+
+.field public static subtitleTextStyle:I = 0x7f040575
+
+.field public static suggestionRowLayout:I = 0x7f04057b
+
+.field public static switchMinWidth:I = 0x7f04057d
+
+.field public static switchPadding:I = 0x7f04057e
+
+.field public static switchStyle:I = 0x7f04057f
+
+.field public static switchTextAppearance:I = 0x7f040580
+
+.field public static textAllCaps:I = 0x7f0405a3
+
+.field public static textAppearanceLargePopupMenu:I = 0x7f0405ba
+
+.field public static textAppearanceListItem:I = 0x7f0405bc
+
+.field public static textAppearanceListItemSmall:I = 0x7f0405be
+
+.field public static textAppearanceSearchResultSubtitle:I = 0x7f0405c1
+
+.field public static textAppearanceSearchResultTitle:I = 0x7f0405c2
+
+.field public static textAppearanceSmallPopupMenu:I = 0x7f0405c3
+
+.field public static textColorAlertDialogListItem:I = 0x7f0405cf
+
+.field public static textColorSearchUrl:I = 0x7f0405d0
+
+.field public static theme:I = 0x7f0405e5
+
+.field public static thickness:I = 0x7f0405e6
+
+.field public static thumbTextPadding:I = 0x7f0405f1
+
+.field public static title:I = 0x7f040604
+
+.field public static titleMarginBottom:I = 0x7f040609
+
+.field public static titleMarginEnd:I = 0x7f04060a
+
+.field public static titleMarginStart:I = 0x7f04060b
+
+.field public static titleMarginTop:I = 0x7f04060c
+
+.field public static titleMargins:I = 0x7f04060d
+
+.field public static titleTextAppearance:I = 0x7f04060f
+
+.field public static titleTextColor:I = 0x7f040610
+
+.field public static titleTextStyle:I = 0x7f040612
+
+.field public static toolbarNavigationButtonStyle:I = 0x7f040615
+
+.field public static toolbarStyle:I = 0x7f040616
+
+.field public static track:I = 0x7f040622
+
+.field public static voiceIcon:I = 0x7f040656
+
+.field public static windowActionBar:I = 0x7f040660
+
+.field public static windowActionBarOverlay:I = 0x7f040661
+
+.field public static windowActionModeOverlay:I = 0x7f040662
+
+.field public static windowFixedHeightMajor:I = 0x7f040663
+
+.field public static windowFixedHeightMinor:I = 0x7f040664
+
+.field public static windowFixedWidthMajor:I = 0x7f040665
+
+.field public static windowFixedWidthMinor:I = 0x7f040666
+
+.field public static windowMinWidthMajor:I = 0x7f040667
+
+.field public static windowMinWidthMinor:I = 0x7f040668
+
+.field public static windowNoTitle:I = 0x7f040669
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

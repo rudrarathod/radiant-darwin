@@ -1,0 +1,45 @@
+.class public abstract Lcom/itextpdf/barcodes/Barcode2D;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field protected static final DEFAULT_MODULE_SIZE:F = 1.0f
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract createFormXObject(Lcom/itextpdf/kernel/colors/Color;Lcom/itextpdf/kernel/pdf/PdfDocument;)Lcom/itextpdf/kernel/pdf/xobject/PdfFormXObject;
+.end method
+
+.method public createFormXObject(Lcom/itextpdf/kernel/pdf/PdfDocument;)Lcom/itextpdf/kernel/pdf/xobject/PdfFormXObject;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, v0, p1}, Lcom/itextpdf/barcodes/Barcode2D;->createFormXObject(Lcom/itextpdf/kernel/colors/Color;Lcom/itextpdf/kernel/pdf/PdfDocument;)Lcom/itextpdf/kernel/pdf/xobject/PdfFormXObject;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public abstract getBarcodeSize()Lcom/itextpdf/kernel/geom/Rectangle;
+.end method
+
+.method public abstract placeBarcode(Lcom/itextpdf/kernel/pdf/canvas/PdfCanvas;Lcom/itextpdf/kernel/colors/Color;)Lcom/itextpdf/kernel/geom/Rectangle;
+.end method

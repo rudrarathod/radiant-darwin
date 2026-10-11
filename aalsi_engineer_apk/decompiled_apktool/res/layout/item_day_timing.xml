@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_rectangle_filled_white_r7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/rl_day_timing" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_cancel_class">
+            <RelativeLayout android:gravity="start|center" android:id="@id/rl_day_from" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="10.0dip">
+                <TextView android:id="@id/tv_day_from" android:layout_width="fill_parent" android:layout_height="16.0dip" android:text="@string/item_day_timing_tv_day_from_text" android:layout_alignParentTop="true" style="@style/BaseTextAppearance.UpperCaseTitle" />
+                <TextView android:id="@id/tv_day_from_time" android:layout_width="fill_parent" android:layout_height="16.0dip" android:text="@string/item_day_timing_tv_day_from_time_text" android:layout_below="@id/tv_day_from" style="@style/BaseTextAppearance.ShadowTitle" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="start|center" android:id="@id/rl_day_to" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/divider_day" android:paddingStart="16.0dip" android:paddingEnd="10.0dip">
+                <TextView android:id="@id/tv_day_to" android:layout_width="fill_parent" android:layout_height="16.0dip" android:text="@string/item_day_timing_tv_day_to_text" android:layout_alignParentTop="true" style="@style/BaseTextAppearance.UpperCaseTitle" />
+                <TextView android:id="@id/tv_day_to_time" android:layout_width="fill_parent" android:layout_height="16.0dip" android:text="@string/item_day_timing_tv_day_to_time_text" android:layout_below="@id/tv_day_to" style="@style/BaseTextAppearance.ShadowTitle" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_cancel_class" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:paddingEnd="0.0dip" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_cross_cp" />
+    </RelativeLayout>
+</LinearLayout>

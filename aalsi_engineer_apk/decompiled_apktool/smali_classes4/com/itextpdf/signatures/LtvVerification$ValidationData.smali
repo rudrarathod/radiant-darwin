@@ -1,0 +1,84 @@
+.class Lcom/itextpdf/signatures/LtvVerification$ValidationData;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/itextpdf/signatures/LtvVerification;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "ValidationData"
+.end annotation
+
+
+# instance fields
+.field public certs:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "[B>;"
+        }
+    .end annotation
+.end field
+
+.field public crls:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "[B>;"
+        }
+    .end annotation
+.end field
+
+.field public ocsps:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "[B>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/itextpdf/signatures/LtvVerification$ValidationData;->crls:Ljava/util/List;
+
+    .line 3
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/itextpdf/signatures/LtvVerification$ValidationData;->ocsps:Ljava/util/List;
+
+    .line 4
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/itextpdf/signatures/LtvVerification$ValidationData;->certs:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/itextpdf/signatures/LtvVerification$1;)V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0}, Lcom/itextpdf/signatures/LtvVerification$ValidationData;-><init>()V
+
+    return-void
+.end method

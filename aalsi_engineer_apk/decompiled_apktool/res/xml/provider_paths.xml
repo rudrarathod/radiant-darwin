@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="classplus_folder" path="Classplus" />
+    <external-path name="filepicker_camera" path="Pictures" />
+    <external-path name="root_folder" path="." />
+    <cache-path name="int_cache" path="." />
+</paths>

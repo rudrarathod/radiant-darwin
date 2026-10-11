@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:navigationIcon="@drawable/ic_arrow_back" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:title="@string/join_requests_toolbar" app:titleTextColor="@color/white" />
+        <include android:id="@id/layout_search" layout="@layout/common_search" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:paddingTop="@dimen/ayp_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/tv_join_request" android:paddingLeft="@dimen/ayp_16dp" android:paddingTop="@dimen/ayp_8dp" android:paddingRight="@dimen/ayp_16dp" android:paddingBottom="@dimen/ayp_8dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/activity_requested_student_tv_join_request_text" android:layout_weight="1.0" style="@style/BaseTextAppearance.UpperCaseTitle" />
+            <TextView android:textColor="@color/button_color" android:id="@id/tv_accept_all" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ayp_16dp" android:paddingTop="@dimen/ayp_8dp" android:paddingRight="@dimen/ayp_16dp" android:paddingBottom="@dimen/ayp_8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_requested_student_tv_accept_all_text" style="@style/BaseTextAppearance.UpperCaseTitle" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <FrameLayout android:id="@id/frame_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

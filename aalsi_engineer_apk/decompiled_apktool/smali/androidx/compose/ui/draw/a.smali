@@ -1,0 +1,165 @@
+.class public abstract Landroidx/compose/ui/draw/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static final a(Lpz/l;)La2/c;
+    .locals 2
+
+    .line 1
+    const-string v0, "onBuildDrawCache"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, La2/d;
+
+    .line 7
+    .line 8
+    new-instance v1, La2/e;
+
+    .line 9
+    .line 10
+    invoke-direct {v1}, La2/e;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-direct {v0, v1, p0}, La2/d;-><init>(La2/e;Lpz/l;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object v0
+.end method
+
+.method public static final b(Ly1/h;Lpz/l;)Ly1/h;
+    .locals 1
+
+    .line 1
+    const-string v0, "<this>"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "onDraw"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v0, Landroidx/compose/ui/draw/DrawBehindElement;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawBehindElement;-><init>(Lpz/l;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-interface {p0, v0}, Ly1/h;->h(Ly1/h;)Ly1/h;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+.end method
+
+.method public static final c(Ly1/h;Lpz/l;)Ly1/h;
+    .locals 1
+
+    .line 1
+    const-string v0, "<this>"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "onBuildDrawCache"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v0, Landroidx/compose/ui/draw/DrawWithCacheElement;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawWithCacheElement;-><init>(Lpz/l;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-interface {p0, v0}, Ly1/h;->h(Ly1/h;)Ly1/h;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+.end method
+
+.method public static final d(Ly1/h;Lpz/l;)Ly1/h;
+    .locals 1
+
+    .line 1
+    const-string v0, "<this>"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "onDraw"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v0, Landroidx/compose/ui/draw/DrawWithContentElement;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawWithContentElement;-><init>(Lpz/l;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-interface {p0, v0}, Ly1/h;->h(Ly1/h;)Ly1/h;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+.end method

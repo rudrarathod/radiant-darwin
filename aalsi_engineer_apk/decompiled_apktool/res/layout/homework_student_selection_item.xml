@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_select_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_sub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="10.0dip">
+        <ImageView android:id="@id/iv_photo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/cb_selection" android:layout_toEndOf="@id/iv_photo">
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimaryText" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="16.0dip" android:layout_marginEnd="20.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#90000000" android:ellipsize="end" android:id="@id/tv_answers" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/tv_name" android:layout_marginStart="16.0dip" android:layout_marginEnd="20.0dip" />
+        </RelativeLayout>
+        <CheckBox android:gravity="center_vertical" android:id="@id/cb_selection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="center_vertical" android:background="@color/gray89" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_sub" />
+</RelativeLayout>

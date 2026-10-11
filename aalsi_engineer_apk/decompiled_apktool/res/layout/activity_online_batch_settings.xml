@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:layout_alignParentTop="true" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_reorder_tabs" android:background="@color/white" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:foreground="?android:selectableItemBackground">
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:tint="@color/colorPrimary" app:srcCompat="@drawable/ic_re_order" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/colorPrimary" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/reorder_tabs" android:layout_weight="1.0" android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_delete" android:background="@color/white" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:foreground="?android:selectableItemBackground">
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:tint="@color/red3" app:srcCompat="@drawable/ic_delete" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/red3" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/delete_this_batch" android:layout_weight="1.0" android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

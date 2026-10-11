@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+            <View android:background="@color/grayE5" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <View android:background="@color/grayE5" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+            <View android:background="@color/grayE5" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/content" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" app:cardElevation="2.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ayp_16dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/gray66" android:id="@id/tv_subheading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <androidx.cardview.widget.CardView android:id="@id/cv_thumbnail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:cardCornerRadius="4.0dip" app:cardElevation="0.0dip">
+                <RelativeLayout android:id="@id/rl_thumbnail" android:background="@color/gray19" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/img_media" android:layout_width="fill_parent" android:layout_height="160.0dip" android:src="@color/colorSecondaryText" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" android:foregroundGravity="center" />
+                    <ImageView android:id="@id/videoIcon" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_play_button_gray" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

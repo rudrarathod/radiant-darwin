@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/color_F4F9FD" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivLogo" android:padding="@dimen/_16sdp" android:layout_width="@dimen/_84sdp" android:layout_height="@dimen/_84sdp" android:src="@mipmap/ic_launcher" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:gravity="center" android:id="@id/tvMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp" android:text="@string/connecting_to_live_session" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_percent="0.3" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ivLogo" style="@style/nunito_sans_semi_bold_16" />
+</androidx.constraintlayout.widget.ConstraintLayout>

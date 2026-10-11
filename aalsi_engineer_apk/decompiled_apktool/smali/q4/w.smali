@@ -1,0 +1,71 @@
+.class public final Lq4/w;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static a(Landroid/view/ViewGroup$MarginLayoutParams;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginEnd()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static b(Landroid/view/ViewGroup$MarginLayoutParams;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginStart()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static c(Landroid/view/ViewGroup$MarginLayoutParams;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static d(Landroid/view/ViewGroup$MarginLayoutParams;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

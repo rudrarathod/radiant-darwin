@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bgView" android:background="@drawable/shape_rectangle_filled_white_r7" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_90sdp" app:layout_constraintBottom_toTopOf="@id/img_music_note" app:layout_constraintEnd_toEndOf="@id/img_music_note" app:layout_constraintStart_toStartOf="@id/img_music_note" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/seekBarContainer" android:layout_width="wrap_content" android:layout_height="@dimen/_135sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatSeekBar android:id="@id/seekBar" android:layout_width="@dimen/_88sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_45sdp" android:rotation="270.0" android:layout_marginStart="@dimen/_minus27sdp" android:layout_marginEnd="@dimen/_minus29sdp" />
+    </LinearLayout>
+    <ImageView android:id="@id/img_music_note" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_new_music_note" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

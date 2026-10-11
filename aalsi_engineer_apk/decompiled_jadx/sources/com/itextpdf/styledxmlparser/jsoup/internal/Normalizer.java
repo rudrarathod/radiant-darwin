@@ -1,0 +1,18 @@
+package com.itextpdf.styledxmlparser.jsoup.internal;
+
+import java.util.Locale;
+
+/* loaded from: classes4.dex */
+public final class Normalizer {
+    public static String lowerCase(String str) {
+        return str != null ? str.toLowerCase(Locale.ENGLISH) : "";
+    }
+
+    public static String normalize(String str) {
+        return lowerCase(str).trim();
+    }
+
+    public static String normalize(String str, boolean z11) {
+        return z11 ? lowerCase(str) : normalize(str);
+    }
+}

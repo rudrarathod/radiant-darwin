@@ -1,0 +1,23 @@
+package androidx.media3.exoplayer.drm;
+
+import androidx.media3.exoplayer.drm.ExoMediaDrm;
+import java.util.UUID;
+
+/* loaded from: classes.dex */
+public final class LocalMediaDrmCallback implements MediaDrmCallback {
+    private final byte[] keyResponse;
+
+    public LocalMediaDrmCallback(byte[] bArr) {
+        this.keyResponse = (byte[]) n5.a.e(bArr);
+    }
+
+    @Override // androidx.media3.exoplayer.drm.MediaDrmCallback
+    public byte[] executeKeyRequest(UUID uuid, ExoMediaDrm.KeyRequest keyRequest) {
+        return this.keyResponse;
+    }
+
+    @Override // androidx.media3.exoplayer.drm.MediaDrmCallback
+    public byte[] executeProvisionRequest(UUID uuid, ExoMediaDrm.ProvisionRequest provisionRequest) {
+        throw new UnsupportedOperationException();
+    }
+}

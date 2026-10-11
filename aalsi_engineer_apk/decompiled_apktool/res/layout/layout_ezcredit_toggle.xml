@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivEmi" android:layout_width="24.0dip" android:layout_height="24.0dip" android:tint="#ff666666" app:srcCompat="@drawable/ic_emi_cp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.5">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tvEasyEmiOption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/layout_ezcredit_toggle_tvEasyEmiOption_text" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tvNewLabel" android:background="@drawable/waiting_to_join_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_new" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginStart="8.0dip" android:backgroundTint="@color/ayp_red" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/ez_cred_emi" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.5">
+            <TextView android:textSize="12.0sp" android:textColor="@color/colorPrimary" android:ellipsize="end" android:id="@id/tvLearnMore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/layout_ezcredit_toggle_tvLearnMore_text" android:maxLines="1" />
+            <Switch android:id="@id/swEasyEmiStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

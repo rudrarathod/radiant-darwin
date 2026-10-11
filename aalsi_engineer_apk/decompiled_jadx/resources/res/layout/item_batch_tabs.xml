@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/ll_batch_tabs_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/v_batch_tabs_indicator"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/transparent_black"
+            android:id="@+id/tv_batch_tabs_label"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/overview"
+            android:layout_weight="1"/>
+        <Switch
+            android:id="@+id/switch_batch_tab"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:id="@+id/iv_batch_tabs_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:tint="@color/transparent_black"
+            app:srcCompat="@drawable/ic_lock"/>
+    </LinearLayout>
+</LinearLayout>

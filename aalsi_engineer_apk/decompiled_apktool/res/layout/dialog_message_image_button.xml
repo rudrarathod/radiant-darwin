@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_dialog_top" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="@dimen/aya_40dp" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/tint_black" android:gravity="center_horizontal" android:id="@id/tv_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:lineSpacingExtra="5.0sp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray66" android:gravity="center_horizontal" android:id="@id/tv_dialog_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:lineSpacingExtra="4.0sp" />
+        <Button android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/btn_done" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="32.0dip" android:layout_marginBottom="@dimen/aya_24dp" android:text="@string/thanks_got_it" android:lineSpacingExtra="5.0sp" android:textAllCaps="false" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,5 @@
+package ov;
+
+/* loaded from: classes4.dex */
+public interface g0 extends AutoCloseable {
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ayp_8dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginStart="15.0dip">
+                <View android:background="@color/gray91" android:layout_width="138.0dip" android:layout_height="99.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <View android:background="@color/gray91" android:layout_width="138.0dip" android:layout_height="99.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="138.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginStart="10.0dip">
+                <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="99.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/dynamic_card_heading" />
+        <androidx.cardview.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingLeft="@dimen/ayp_16dp" android:paddingRight="@dimen/ayp_16dp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

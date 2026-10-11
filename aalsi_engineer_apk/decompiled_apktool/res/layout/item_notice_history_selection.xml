@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_item_announcement" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="5.0dip" android:tint="@color/divider" app:srcCompat="@drawable/ic_quote" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_announcement_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ll_announcement_status" android:layout_toRightOf="@id/ll_image_container">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="start|center|top" android:autoLink="all" android:id="@id/tv_announcement_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:maxLines="2" fontPath="fonts/georgia_italic.ttf" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_announcement_details" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:maxLines="2" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_attachment_status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:layout_marginEnd="20.0dip">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_attachment_tilted" android:tint="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_announcement_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignBottom="@id/ll_announcement_container" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true">
+            <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/shape_rectangle_gray_outline_r6" android:layout_width="wrap_content" android:layout_height="40.0dip">
+                <ImageView android:id="@id/iv_accept" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="?android:selectableItemBackground" android:maxWidth="24.0dip" android:maxHeight="24.0dip" android:tint="@color/ForestGreen" android:layout_alignTop="@id/iv_reject" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_done_tick" />
+                <View android:id="@id/view" android:background="@color/gray89" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/iv_accept" android:layout_centerInParent="true" android:layout_toEndOf="@id/iv_accept" />
+                <ImageView android:id="@id/iv_reject" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="?android:selectableItemBackground" android:maxWidth="24.0dip" android:maxHeight="24.0dip" android:tint="@color/red3" android:layout_toRightOf="@id/view" android:layout_centerVertical="true" android:layout_toEndOf="@id/view" app:srcCompat="@drawable/ic_close_cross" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:visibility="gone" layout="@layout/common_footer_layout_gray91" />
+</LinearLayout>

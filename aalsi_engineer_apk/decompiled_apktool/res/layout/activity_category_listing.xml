@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:layout_scrollFlags="scroll|enterAlways" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <include android:id="@id/sv_category_listing" layout="@layout/common_search_new" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" app:srcCompat="@drawable/ic_students_empty" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_categories_to_show" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_categories_to_show" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_categories" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

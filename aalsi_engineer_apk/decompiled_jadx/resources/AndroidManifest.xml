@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="69"
+    android:versionName="1.17.0.1"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    android:requiredSplitTypes="base__abi"
+    android:splitTypes=""
+    package="co.edvin.erkrk"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="35"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-feature
+        android:name="android.hardware.camera2.full"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <queries>
+        <package android:name="com.shcard.smartpay"/>
+        <package android:name="com.shinhancard.smartshinhan"/>
+        <package android:name="com.hyundaicard.appcard"/>
+        <package android:name="com.lumensoft.touchenappfree"/>
+        <package android:name="kr.co.samsungcard.mpocket"/>
+        <package android:name="nh.smart.nhallonepay"/>
+        <package android:name="com.kbcard.cxh.appcard"/>
+        <package android:name="com.kbstar.reboot"/>
+        <package android:name="com.kbstar.kbbank"/>
+        <package android:name="kvp.jjy.MispAndroid320"/>
+        <package android:name="com.lcacApp"/>
+        <package android:name="com.hanaskcard.paycla"/>
+        <package android:name="com.hanaskcard.rocomo.potal"/>
+        <package android:name="kr.co.hanamembers.hmscustomer"/>
+        <package android:name="kr.co.citibank.citimobile"/>
+        <package android:name="com.wooricard.wpay"/>
+        <package android:name="com.wooricard.smartapp"/>
+        <package android:name="com.wooribank.smart.npib"/>
+        <package android:name="viva.republica.toss"/>
+        <package android:name="com.nhnent.payapp"/>
+        <package android:name="com.ssg.serviceapp.android.egiftcertificate"/>
+        <package android:name="com.kakao.talk"/>
+        <package android:name="com.nhn.android.search"/>
+        <package android:name="com.lotte.lpay"/>
+        <package android:name="com.lottemembers.android"/>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.samsung.android.spaylite"/>
+        <package android:name="com.lge.lgpay"/>
+        <package android:name="com.TouchEn.mVaccine.webs"/>
+        <package android:name="kr.co.shiftworks.vguardweb"/>
+        <package android:name="com.ahnlab.v3mobileplus"/>
+        <package android:name="com.kftc.bankpay.android"/>
+        <package android:name="com.kbstar.liivbank"/>
+        <package android:name="com.mysmilepay.app"/>
+        <package android:name="uplus.membership"/>
+        <package android:name="com.tmoney.inapp"/>
+        <package android:name="com.tmoney.nfc_pay"/>
+        <package android:name="com.ebcard.cashbeeinapp"/>
+        <package android:name="com.sktelecom.tauth"/>
+        <package android:name="com.lguplus.smartotp"/>
+        <package android:name="com.kt.ktauth"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.DIAL"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.PICK"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.SENDTO"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.OPEN_DOCUMENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truecaller.debug"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="my.com.tngdigital.ewallet"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data
+                android:mimeType="*/*"
+                android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data
+                android:mimeType="*/*"
+                android:scheme="upi"
+                android:host="pay"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="upi"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <permission
+        android:name="co.edvin.erkrk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="co.edvin.erkrk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name="co.classplus.app.ClassplusApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:theme="@style/LiveClassAppTheme"
+            android:label="@string/app_name"
+            android:name="co.classplus.app.ui.antmedia.ui.session.activities.HMSLiveClassActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppThemeCompose"
+            android:label="@string/title"
+            android:name="co.classplus.app.compose.TestActivity"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.wallet.TransactionsHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.wallet.WalletActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.commonrecharge.CommonRechargeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchTimings.batchTimingsWithCalender.BatchTimingsWithCalender"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.editCourse.AddEditCoursePlanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.liveClasses.GlobalFolderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.freeresources.freetest.addtests.ImportFreeTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.freeresources.freetest.addtests.ImportTestTimelineActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.student.onboardingKyc.StudentKycActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value=""/>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.students.bau.StudentErrorListInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/SplashTheme"
+            android:name="co.classplus.app.ui.common.splash.KSplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data
+                    android:scheme="branch.nirmaan.app://"
+                    android:host="open"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="nirmaan.app.link"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.subjectiveTest.UploadAnswerSheetActivity"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.common.settings.lanuage.ChangeLanguageActivity"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.common.signup.SignUpActivityV2"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.batchdetail.faculties.permissions.StoreFacultyPermissionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.batchdetail.faculties.StoreFacultiesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/TranslucentCurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.base.BottomSheetBaseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="co.classplus.app.ui.base.viewModelTest.VMTestActivity"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.resources.ytcustom.YTPlayerActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity
+            android:name="co.classplus.app.ui.common.zoom.ZoomWebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/TranslucentCurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.loginV2.LoginBottomSheetActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.home.chatslist.StudentGroupsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/Translucent"
+            android:name="co.classplus.app.ui.common.chatV2.options.CategoryActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/Translucent"
+            android:name="co.classplus.app.ui.common.chatV2.FeedbackActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:name="co.classplus.app.ui.common.game.GameZopWebViewActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.ezcredit.schemes.EzCreditSchemesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.homework.studenthw.StudentHwActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.homework.selectStudent.SelectHomeworkStudentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.userprofile.ProfilePictureViewingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.liveClasses.AgoraLiveClassesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.liveClasses.courseList.CourseListLiveActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.offline.download.OfflineDownloadActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.offline.download.OfflineDownloadFilesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.categoryListing.CategoryListingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.dynamicscreen.DynamicScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.chatV2.createBroadcast.CreateBroadcastActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.videostore.genericfilters.allfilters.AllFiltersActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.videostore.recommendCourse.selectReceipt.RecommendReceiptActivity"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.recommendCourse.RecommendCourseActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.videostore.editCourse.EditCourseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.videostore.editCourse.subcategorySelection.MultiItemSelectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.userprofile.editparent.AddEditParentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.batchTimings.BatchTimingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.createclass.CreateClassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.createclass.UpdateClassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.userprofile.paymentsfragment.paymentslisting.PaymentsListingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.edituserprofile.EditUserProfile"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.chat.chatwindow.ShowAllFiltersActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.chatV2.selectrecipient.SelectRecipientActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.utils.multipleselection.MultipleSelectionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.chatV2.createGroup.CreateGroupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.leaderboard.LeaderBoardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.enquiry.create.AssignLeadActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.customgrading.CustomGradingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="co.classplus.app.ui.common.fullscreen.FullScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.createtest.assignTest.AssignTestToStudentsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.home.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.createbatch.CreateBatchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.feerecord.FeeRecordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.attendance.AttendanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.chat.chatwindow.ChatWindowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.creditmanagement.CreditManagementActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.utils.multiitemselector.SelectMultiItemActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.announcements.view.AnnouncementPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.students.RequestedStudentsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.composemessage.CreateMessageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:label="Edit Profile"
+            android:name="co.classplus.app.ui.common.profile.EditProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.batchdetails.BatchDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.students.addstudent.AddStudentsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.testdetails.TestPerformanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.students.addstudent.addfromcontacts.AddStudentFromContactsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.studentDetails.addparent.AddParentFromContactsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.students.addstudent.addmanually.AddContactManuallyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="co.classplus.app.ui.common.utils.singleitemselector.SelectSingleItemActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.home.timetable.create.CreateEventActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.settings.BatchSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.createtest.CreateTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.createbatch.selectitem.SelectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.settings.coownerdetails.CownerDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.createbatch.batchupdate.UpdateBatchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.testdetails.testupdate.UpdateTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.creditmanagement.info.CreditInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.chat.contacts.ChatContactsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.composemessage.selectstudents.SelectStudentFromBatchesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.studentDetails.StudentDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.settings.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.student.batchdetails.StudentBatchDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.student.home.StudentHomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.student.testdetails.StudentTestPerformanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.student.payfee.PayFeeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.parent.linkstudent.SearchStudentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.studentDetails.studentattendance.StudentAttendanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.parent.home.ParentHomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.student.testdetails.givetest.WebTestActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.createtest.selecttopic.PreviewTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.resources.addresource.AddResourceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.resources.playvideo.PlayVideoActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="co.classplus.app.ui.common.aboutus.CommonRefreshWebViewActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="co.classplus.app.ui.common.pickcontact.PickContactActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.enquiry.create.AddEnquiryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.enquiry.list.EnquiriesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.enquiry.list.filter.EnquiryFilterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.enquiry.details.EnquiryDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.enquiry.details.history.EnquiryHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.enquiry.edit.EditEnquiryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.structure.FeeStructureActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.feerecord.studentlist.StudentListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.structure.installments.StructureInstallmentsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.feerecord.installments.PaymentsInstallmentsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.feerecord.installments.addedit.AddEditInstallmentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.structure.installments.EditInstallmentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.feemanagement.PaymentsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.students.paymentdetails.StudentPaymentDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.recordpayment.RecordPaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.settings.PaymentSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.settings.structures.StructuresSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.settings.taxdetails.TaxDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.editstudentparent.EditStudentParentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.signups.SignUpsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.homework.createupdate.create.AddHomeworkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.homework.detail.HomeworkDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.homework.createupdate.update.EditHomeworkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.student.batchdetails.homework.StudentHomeworkDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.counselling.CounsellingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.freeresources.selecttags.SelectTagsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.freeresources.FreeResourcesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="co.classplus.app.ui.common.freeresources.studymaterial.newfolder.NewFolderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.freeresources.studymaterial.folderdetail.FolderDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.settings.caretaker.CaretakerSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.referearn.ReferEarnActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.deleteuser.DeleteUserActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.freeresources.multilevelFolderDetails.MultilevelFolderDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.batchdetails.settings.batchTabsSettings.BatchTabsSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.recommendcourse.RecommendBundleCourseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.pdfview.PdfViewerActivity"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.common.offline.player.ExoPlayerActivity"
+            android:exported="false"
+            android:taskAffinity=".ui.common.jwplayer.JWPlayerActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"/>
+        <activity
+            android:name="co.classplus.app.ui.student.cms.instructions.InstructionsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.coursedetail.CourseDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.batchdetail.settings.OnlineBatchSettingsActivity"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.home.batcheslist.allbatches.AllBatchesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.utils.CommonOnlinePayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.utils.customcheckout.CustomCheckoutActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.utils.customcheckout.UpiOneTapCheckoutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.teststats.StoreTestStatsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.batchdetail.overview.permissions.CourseResellPermissionsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.batchdetail.overview.AddAddressActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.batchdetail.overview.EditDeleteAddressActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="co.classplus.app.ui.common.freeLiveWebview.FreeLiveWebViewActivity"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.grow.posters.EditPosterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ClassplusBuildInfo"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/LiveClassAppTheme"
+            android:label="@string/app_name"
+            android:name="co.classplus.app.ui.antmedia.ui.session.activities.LiveSessionActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/LiveClassAppTheme"
+            android:label="@string/app_name"
+            android:name="co.classplus.app.ui.antmedia.ui.session.newLive.endSession.EndSessionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.grow.common.MarketingCollateralActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName="co.classplus.app.ui.tutor.home.HomeActivity"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.userprofile.UserProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/user/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/user/.*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.common.loginV2.LoginLandingActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/otpless_package_name"
+                    android:host="otpless"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/posters"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/posters"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/browser/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/browser/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/help/chat/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/help/chat/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/home/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/home/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/chats"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/chats"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/chat"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/chat"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/report"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/report"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/reports"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/reports"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/help"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/help"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/timetable"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/timetable"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/store/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/store/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/batch/.*/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/batch/.*/.*/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/batches"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/batches"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/br/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/br/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/material/videos/.*/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/material/videos/.*/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/grow/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/grow/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/grow/videos/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/grow/videos/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/chat_br/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/chat_br/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/create_coupon/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/create_coupon/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/conversation/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/conversation/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/cwt"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/cwt"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/faq/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/faq/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/oc/.*/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/oc/.*/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/content/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/content/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/lc/.*/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/lc/.*/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/lcs/.*/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/lcs/.*/.*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.student.peerchallenge.PeerChallengeWebViewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/pc/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/pc/.*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.common.aboutus.CommonWebViewActivity"
+            android:exported="true"
+            android:configChanges="screenSize|orientation">
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="paysample"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/webview/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/webview/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="paysample"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/wv/.*/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/wv/.*/.*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.tutor.smsrecharge.SmsRechargeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter
+                android:label="@string/sms_recharge_header"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/sr"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/sr"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.common.offline.player.OnlineExoPlayerActivity"
+            android:exported="true"
+            android:taskAffinity=".ui.common.jwplayer.JWPlayerActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true">
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/basic-exo/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/basic-exo/.*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.student.cms.web.CMSWebviewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false">
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/cms/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/cms/.*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.courseListing.CourseListingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/courses.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/courses.*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.videostore.batchdetail.ContentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.videostore.batchdetail.OnlineBatchDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="co.classplus.app.ui.common.notifications.create.CreateNotificationsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/create_notification"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/create_notification"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.classplus.app.ui.common.deeplink.NotificationLandingActivity"
+            android:exported="false"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.feemanagement.settings.notifications.PaymentNotificationsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.notifications.details.NotificationDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.notifications.recieve.NotificationPanelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.common.notifications.landing.LandingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.notifications.create.notificationRecipients.NotificationRecipientsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.notifications.create.notificationRecipients.notificationRecipientsDetails.RecipientDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponCreationDiscountType.CouponCreateDiscountType"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.createCoupon.CreateCoupon"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponStudentSelection.CouponStudentSelection"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponCourseDetails.CouponCourseDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponListing.CouponListing"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponHistory.CouponHistory"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponUsageDetails.CouponUsageDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/CurvedBottomSheetDialogTheme"
+            android:name="co.classplus.app.ui.tutor.couponManagement.coupondetails.CouponDetails"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponShare.CouponShare"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponStudentDetails.CouponStudentDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponSelectedCourses.CouponSelectedCourses"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.tutor.couponManagement.couponHelp.CouponHelp"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="co.classplus.app.ui.common.videostore.webview.StoreCommonWebViewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true">
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="paysample"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/v2/webview/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/v2/webview/.*"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="paysample"/>
+                <data
+                    android:scheme="@string/classplus_https"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/v2/wv/.*/.*"/>
+                <data
+                    android:scheme="@string/classplus_http"
+                    android:host="@string/deeplink_base_url_org"
+                    android:pathPattern="/app/v2/wv/.*/.*"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.truecaller.android.sdk.PartnerKey"
+            android:value="Ip1CK1b7265c22d164c6aa65c51462dc2697d"/>
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_uSbOpxaxtGBKeU"/>
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="true"/>
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"/>
+        <provider
+            android:name="co.classplus.app.utils.ClassplusFileProvider"
+            android:exported="false"
+            android:authorities="@string/classplus_provider_authority"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver
+            android:name="co.classplus.app.ui.common.splash.UtmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="co.classplus.app.utils.receiver.SMSRetrieverBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="co.classplus.app.ui.common.attachment.AttachmentUploadService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync"/>
+        <service
+            android:name="co.classplus.app.ui.common.splash.updateUtm.UtmUpdateService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false"
+            android:foregroundServiceType="shortService"/>
+        <service
+            android:name="co.classplus.app.ui.tutor.batchdetails.resources.playvideo.youtubeanalytics.YoutubeAnalyticsService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false"/>
+        <service
+            android:name="co.classplus.app.ui.common.jwplayer.updatesubscriberservice.SubscriberUpdateService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false"
+            android:foregroundServiceType="shortService"/>
+        <service
+            android:name="co.classplus.app.cloudmessaging.handle.FcmMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="co.classplus.app.ui.tutor.batchdetails.announcements.sendservice.SendNewNoticeService"
+            android:exported="false"/>
+        <service
+            android:name="co.classplus.app.ui.common.chat.SendChatMessageService"
+            android:exported="false"/>
+        <service
+            android:name="co.classplus.app.ui.tutor.feemanagement.downloadreceipt.DownloadPaymentReceiptService"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="co.classplus.app.ui.common.offline.manager.OfflineVideoDownloadService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync">
+            <intent-filter>
+                <action android:name="androidx.media3.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="androidx.media3.exoplayer.scheduler.PlatformScheduler.PlatformSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/CheckoutTheme"
+            android:name="com.razorpay.CheckoutActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <data
+                    android:scheme="io.rzp"
+                    android:host="rzp.io"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/LiveClassAppTheme"
+            android:label="@string/app_name"
+            android:name="co.classplus.app.ui.antmedia.ui.session.activities.SessionPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_kztvUEI8u7A3mxUfV0tCbfbdtqbgrJfQ"/>
+        <activity
+            android:name="com.xprep.library.doodling.DoodleActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/Base.Theme.AppCompat"
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
+        <activity
+            android:name="droidninja.filepicker.FilePickerActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name="droidninja.filepicker.MediaDetailsActivity"
+            android:configChanges="screenSize|orientation"/>
+        <provider
+            android:name="droidninja.filepicker.utils.FilePickerProvider"
+            android:exported="false"
+            android:authorities="co.edvin.erkrk.droidninja.filepicker.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity
+            android:name="com.otpless.main.OtplessLoginActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <meta-data
+            android:name="otpless.deeplink.scheme"
+            android:value="co.edvin.erkrk.otpless"/>
+        <meta-data
+            android:name="otpless.deeplink.host"
+            android:value="otpless"/>
+        <activity
+            android:name="live.videosdk.rtc.android.permission.PermissionsActivity"
+            android:exported="false"/>
+        <service
+            android:name="live.videosdk.rtc.android.ScreenShareService"
+            android:foregroundServiceType="mediaProjection"/>
+        <receiver
+            android:name="live.videosdk.rtc.android.PhoneCallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity
+            android:theme="@style/com_facebook_activity_theme"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.co.edvin.erkrk"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true"/>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false"/>
+        <activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.co.edvin.erkrk"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="co.edvin.erkrk.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true"/>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="co.edvin.erkrk.androidx-startup">
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="live.hms.video.services.HMSScreenCaptureService"
+            android:exported="false"
+            android:foregroundServiceType="microphone|camera|mediaProjection"/>
+        <receiver
+            android:name="live.hms.video.services.LogAlarmManager"
+            android:enabled="true"
+            android:exported="false"/>
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="co.edvin.erkrk.FacebookInitProvider"/>
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager.CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/Theme.PlayCore.Transparent"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"/>
+        <activity
+            android:theme="@style/CheckoutTheme"
+            android:name="com.razorpay.DeeplinkActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="razorpay"
+                    android:host="co.edvin.erkrk"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.razorpay.UpiChooserSelectionReceiver"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true"/>
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store"/>
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="4"/>
+    </application>
+</manifest>

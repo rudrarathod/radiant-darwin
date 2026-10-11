@@ -1,0 +1,6 @@
+.class public interface abstract Lco/classplus/app/ui/tutor/createtest/testtype/f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lco/classplus/app/ui/base/o2;

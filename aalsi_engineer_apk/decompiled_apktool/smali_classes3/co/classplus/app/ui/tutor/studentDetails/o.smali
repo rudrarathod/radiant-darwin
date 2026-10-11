@@ -1,0 +1,42 @@
+.class public final synthetic Lco/classplus/app/ui/tutor/studentDetails/o;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lco/classplus/app/ui/tutor/studentDetails/n$b;
+
+.field public final synthetic b:Lco/classplus/app/data/model/base/UserBaseModel;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lco/classplus/app/ui/tutor/studentDetails/n$b;Lco/classplus/app/data/model/base/UserBaseModel;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lco/classplus/app/ui/tutor/studentDetails/o;->a:Lco/classplus/app/ui/tutor/studentDetails/n$b;
+
+    iput-object p2, p0, Lco/classplus/app/ui/tutor/studentDetails/o;->b:Lco/classplus/app/data/model/base/UserBaseModel;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lco/classplus/app/ui/tutor/studentDetails/o;->a:Lco/classplus/app/ui/tutor/studentDetails/n$b;
+
+    iget-object v1, p0, Lco/classplus/app/ui/tutor/studentDetails/o;->b:Lco/classplus/app/data/model/base/UserBaseModel;
+
+    invoke-static {v0, v1, p1}, Lco/classplus/app/ui/tutor/studentDetails/n$b;->h1(Lco/classplus/app/ui/tutor/studentDetails/n$b;Lco/classplus/app/data/model/base/UserBaseModel;Landroid/view/View;)V
+
+    return-void
+.end method

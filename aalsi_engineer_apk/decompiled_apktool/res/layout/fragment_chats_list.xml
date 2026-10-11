@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/llHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways">
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/cl_view_as" android:background="#ffe6f5fc" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="8.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="start" android:id="@id/tv_view_as" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/viewing_as" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ll_change_user" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_change_user" android:background="?selectableItemBackground" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_tutor" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginEnd="8.0dip" app:srcCompat="@drawable/ic_user_grey" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:layout_marginEnd="8.0dip" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_expand" android:layout_width="20.0dip" android:layout_height="20.0dip" app:srcCompat="@drawable/ic_down_arrow" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_search_container" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/layout_search" android:background="@drawable/shape_rectangle_filled_white_r7" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="8.0dip">
+                    <androidx.appcompat.widget.SearchView android:gravity="center" android:layout_gravity="center" android:id="@id/search_view" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_search" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_by_name_or_number" />
+                </LinearLayout>
+                <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvHeaderTitle" android:background="@drawable/bg_blue_corner_radius_4" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_weight="1.0" android:textAlignment="center" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llUnRepliedConversationContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:id="@id/tvUnreadConversationTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:textAllCaps="true" android:layout_marginStart="16.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rvUnRepliedConversations" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llDisappearingGroupsContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:id="@id/tvDisappearingGroupTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:textAllCaps="true" android:layout_marginStart="16.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rvDisappearingGroup" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llMessagesHeader" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:id="@id/tvMessages" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/fragment_chats_list_tvMessages_text" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/colorPrimary" android:gravity="end" android:id="@id/tvStudentGroups" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/fragment_chats_list_tvStudentGroups_text" android:layout_weight="1.0" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_Conversations" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_search_container" />
+            <ScrollView android:id="@id/sv_no_chat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_nochat_common" android:layout_width="100.0dip" android:layout_height="100.0dip" app:srcCompat="@drawable/ic_no_chat" />
+                    <ImageView android:id="@id/iv_nochat_guest" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" app:srcCompat="@drawable/ic_guest_chat_placeholder" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tvEmptyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fragment_chats_list_tvEmptyTitle_text" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/label_no_chat" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                    <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/bt_signup" android:background="@drawable/bg_button_click_gradient" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="48.0dip" android:layout_marginBottom="16.0dip" android:text="@string/sign_up_to_use_chats" android:textAllCaps="false" />
+                </LinearLayout>
+            </ScrollView>
+            <include android:visibility="gone" layout="@layout/progress_bar" />
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:layout_gravity="start|bottom|center" android:id="@id/ll_help_videos" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_help_bottom" layout="@layout/layout_help_button" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fabChat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_marginEnd="20.0dip" app:backgroundTint="@color/colorAccent" app:fabSize="normal" app:pressedTranslationZ="12.0dip" app:srcCompat="@drawable/ic_add_plus" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

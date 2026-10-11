@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="student">
+        <item quantity="other">%1$s Students</item>
+        <item quantity="one">%1$s Student</item>
+    </plurals>
+    <plurals name="x_answer_sheet">
+        <item quantity="other">Your Answers (%d Files)</item>
+        <item quantity="one">Your Answers (%d File)</item>
+    </plurals>
+    <plurals name="x_archived_batch">
+        <item quantity="other">%1$d ARCHIVED BATCHES</item>
+        <item quantity="one">%1$d ARCHIVED BATCH</item>
+    </plurals>
+    <plurals name="x_attempts_allowed">
+        <item quantity="other">* %d attempts allowed</item>
+        <item quantity="one">* %d attempt allowed</item>
+    </plurals>
+    <plurals name="x_attempts_remaining">
+        <item quantity="other">* %d attempts remaining</item>
+        <item quantity="one">* %d attempt remaining</item>
+    </plurals>
+    <plurals name="x_batch">
+        <item quantity="other">%1$d BATCHES</item>
+        <item quantity="one">%1$d BATCH</item>
+    </plurals>
+    <plurals name="x_files_no">
+        <item quantity="other">"%d
+Files"</item>
+        <item quantity="one">"%d
+File"</item>
+    </plurals>
+    <plurals name="x_new_notifications">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="x_question_paper">
+        <item quantity="other">Question Paper - %d Files</item>
+        <item quantity="one">Question Paper - %d File</item>
+    </plurals>
+    <plurals name="x_recipients_with_size">
+        <item quantity="other">%d RECIPIENTS</item>
+        <item quantity="one">%d RECIPIENT</item>
+    </plurals>
+    <plurals name="x_test_no">
+        <item quantity="other">"%d
+Tests"</item>
+        <item quantity="one">"%d
+Test"</item>
+    </plurals>
+    <plurals name="x_unread_messages">
+        <item quantity="other">%d UNREAD MESSAGES</item>
+        <item quantity="one">%d UNREAD MESSAGE</item>
+    </plurals>
+    <plurals name="x_videos_no">
+        <item quantity="other">"%d
+Videos"</item>
+        <item quantity="one">"%d
+Video"</item>
+    </plurals>
+</resources>

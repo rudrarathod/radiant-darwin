@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_option_select" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="#de000000" android:id="@id/tvHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar android:id="@id/rangeSlider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="16.0dip" app:bar_color="#fff0f0f0" app:bar_highlight_color="@color/present_green" app:left_thumb_color="#ffe5e5e5" app:left_thumb_color_pressed="#ffe0e0e0" app:right_thumb_color="#ffe5e5e5" app:right_thumb_color_pressed="#ffe0e0e0" />
+</LinearLayout>

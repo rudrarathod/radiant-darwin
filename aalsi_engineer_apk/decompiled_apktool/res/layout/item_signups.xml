@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/mainLayoutClick" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutImage" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_marginEnd="10.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/imageViewUser" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="start" android:id="@id/tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+            <ImageView android:layout_gravity="end" android:id="@id/iv_dots" android:paddingLeft="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="40.0dip" android:tint="@color/colorSecondaryText" android:paddingStart="10.0dip" app:srcCompat="@drawable/ic_dots" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_select" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="40.0dip">
+                <CheckBox android:id="@id/cb_select" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginEnd="5.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:ellipsize="end" android:id="@id/tv_number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/rl_badge" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginEnd="5.0dip" app:srcCompat="@drawable/ic_new" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:ellipsize="end" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="@color/admin_text" android:id="@id/tv_free_test_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/student_attempted_free_test" android:lineSpacingExtra="4.0sp" />
+    </LinearLayout>
+</LinearLayout>

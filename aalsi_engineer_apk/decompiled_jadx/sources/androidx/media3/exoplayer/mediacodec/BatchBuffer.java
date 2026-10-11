@@ -1,0 +1,81 @@
+package androidx.media3.exoplayer.mediacodec;
+
+import androidx.media3.decoder.DecoderInputBuffer;
+import java.nio.ByteBuffer;
+
+/* loaded from: classes.dex */
+final class BatchBuffer extends DecoderInputBuffer {
+    public static final int DEFAULT_MAX_SAMPLE_COUNT = 32;
+    static final int MAX_SIZE_BYTES = 3072000;
+    private long lastSampleTimeUs;
+    private int maxSampleCount;
+    private int sampleCount;
+
+    public BatchBuffer() {
+        super(2);
+        this.maxSampleCount = 32;
+    }
+
+    private boolean canAppendSampleBuffer(DecoderInputBuffer decoderInputBuffer) {
+        ByteBuffer byteBuffer;
+        if (!hasSamples()) {
+            return true;
+        }
+        if (this.sampleCount >= this.maxSampleCount) {
+            return false;
+        }
+        ByteBuffer byteBuffer2 = decoderInputBuffer.data;
+        return byteBuffer2 == null || (byteBuffer = this.data) == null || byteBuffer.position() + byteBuffer2.remaining() <= MAX_SIZE_BYTES;
+    }
+
+    public boolean append(DecoderInputBuffer decoderInputBuffer) {
+        n5.a.a(!decoderInputBuffer.isEncrypted());
+        n5.a.a(!decoderInputBuffer.hasSupplementalData());
+        n5.a.a(!decoderInputBuffer.isEndOfStream());
+        if (!canAppendSampleBuffer(decoderInputBuffer)) {
+            return false;
+        }
+        int i11 = this.sampleCount;
+        this.sampleCount = i11 + 1;
+        if (i11 == 0) {
+            this.timeUs = decoderInputBuffer.timeUs;
+            if (decoderInputBuffer.isKeyFrame()) {
+                setFlags(1);
+            }
+        }
+        ByteBuffer byteBuffer = decoderInputBuffer.data;
+        if (byteBuffer != null) {
+            ensureSpaceForWrite(byteBuffer.remaining());
+            this.data.put(byteBuffer);
+        }
+        this.lastSampleTimeUs = decoderInputBuffer.timeUs;
+        return true;
+    }
+
+    @Override // androidx.media3.decoder.DecoderInputBuffer, s5.a
+    public void clear() {
+        super.clear();
+        this.sampleCount = 0;
+    }
+
+    public long getFirstSampleTimeUs() {
+        return this.timeUs;
+    }
+
+    public long getLastSampleTimeUs() {
+        return this.lastSampleTimeUs;
+    }
+
+    public int getSampleCount() {
+        return this.sampleCount;
+    }
+
+    public boolean hasSamples() {
+        return this.sampleCount > 0;
+    }
+
+    public void setMaxSampleCount(int i11) {
+        n5.a.a(i11 > 0);
+        this.maxSampleCount = i11;
+    }
+}

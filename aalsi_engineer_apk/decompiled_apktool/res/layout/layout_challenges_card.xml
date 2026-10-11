@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_challenges" android:background="@color/grayF1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rlBackgroundImage" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvMissingOut" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/layout_challenges_card_tvMissingOut_text" android:textAllCaps="false" android:layout_marginStart="16.0dip" />
+            <LinearLayout android:id="@id/llRank" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip">
+                <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/ivRank" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_rank" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/colorText_Black_Alpha_99" android:id="@id/textRank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/ivRank" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvRank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textRank" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/ivRank" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/llPoints" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="50.0dip" android:layout_toEndOf="@id/llRank">
+                <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/ivPoints" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_price_cut" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/colorText_Black_Alpha_99" android:id="@id/textPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/ivPoints" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textPoints" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/ivPoints" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/button_color" android:id="@id/tvScoreboard" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/layout_challenges_card_tvScoreboard_text" android:layout_below="@id/rl_main" android:paddingStart="16.0dip" android:paddingEnd="10.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlWinPoints" android:background="@color/white" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <ImageView android:id="@id/ivBottomPoints" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_win_points" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvWinPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="20.0dip" android:layout_toEndOf="@id/ivBottomPoints" />
+        <ImageView android:id="@id/ivNext" android:layout_width="10.0dip" android:layout_height="10.0dip" android:tint="@color/black" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/arrow_right_blue" />
+    </RelativeLayout>
+</LinearLayout>

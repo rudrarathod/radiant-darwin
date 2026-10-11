@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corner_bg_dark_grey"
+        android:padding="20dp"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp">
+        <LinearLayout
+            android:id="@+id/menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/menu_item_simple_tv"/>
+            <include layout="@layout/menu_item_simple_tv"/>
+            <include layout="@layout/menu_item_simple_tv"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

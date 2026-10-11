@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/choose_payment_method" android:layout_weight="1.0" />
+        <ImageView android:gravity="center_vertical" android:id="@id/iv_close" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_live_class_close" />
+    </LinearLayout>
+    <View android:background="@color/grayE5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_light_blue_corner_radius_8" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginVertical="8.0dip">
+        <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="16.0dip" app:srcCompat="@drawable/ic_wallet" />
+            <TextView android:textColor="@color/black" android:id="@id/tv_avl_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.6" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/red3" android:id="@id/tv_insufficient_funds" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" />
+        <View android:background="@color/grayE5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/btn_wallet" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/add_money_and_pay" android:textAllCaps="false" android:paddingVertical="12.0dip" app:backgroundTint="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_light_blue_corner_radius_8" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginVertical="8.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_payment" android:alpha="0.87" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/wallet_alt_payment_desc" android:alpha="0.6" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimary" android:id="@id/btn_rzp" android:background="@drawable/shape_rectangle_filled_white_outline_blue_r5" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:foreground="?selectableItemBackground" android:text="@string/pay_online" android:textAllCaps="false" android:textAlignment="center" android:paddingVertical="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

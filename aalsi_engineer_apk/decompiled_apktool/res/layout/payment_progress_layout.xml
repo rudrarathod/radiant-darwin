@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/payment_progress_layout" android:padding="32.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progressBar" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_margin="40.0dip" app:srcCompat="@drawable/ic_progressbar" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_3C4852" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/payment_processing" android:textAlignment="center" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_7A8B94" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transaction_processing_desc" android:textAlignment="center" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginStart="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginEnd="15.0dip">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ayp_8dp">
+                    <View android:background="@color/gray74" android:layout_width="150.0dip" android:layout_height="20.0dip" />
+                    <View android:background="@color/gray74" android:layout_width="150.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:layout_marginStart="16.0dip" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ayp_8dp">
+                    <View android:background="@color/gray74" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_margin="4.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:layout_gravity="center_horizontal" android:background="@color/gray74" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <include layout="@layout/dynamic_card_heading" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:id="@id/iv_heading" android:layout_width="25.0dip" android:layout_height="20.0dip" android:layout_marginStart="8.0dip" />
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#99000000" android:id="@id/tv_subheading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ayp_8dp" android:layout_marginBottom="@dimen/ayp_8dp" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:id="@id/ll_change" android:background="@drawable/shape_rectangle_gray_outline_r2" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/blue" android:layout_gravity="center" android:id="@id/tv_change" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_videos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/ll_emblem" android:background="@drawable/shape_rectangle_filled_dark_green_r5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_emblem" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:cardCornerRadius="0.0dip" app:cardElevation="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/tvBatchName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ll_label_container" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/ll_label_container" android:layout_alignParentStart="true" style="@style/BaseTextAppearance.Title" />
+            <LinearLayout android:id="@id/ll_label_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivOptions" android:layout_toStartOf="@id/ivOptions">
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_inactive_label" android:background="@drawable/waiting_to_join_shape" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inactive" android:textAllCaps="true" android:backgroundTint="@color/ayp_red" />
+            </LinearLayout>
+            <ImageView android:id="@id/ivOptions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="#ff666666" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_dots" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:id="@id/ivClass" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_class" />
+            <TextView android:id="@id/tvCourseName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginStart="12.0dip" style="@style/BaseTextAppearance.SubTitle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <ImageView android:id="@id/ivBook" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_book" />
+            <TextView android:id="@id/tvCategoryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginStart="12.0dip" style="@style/BaseTextAppearance.SubTitle" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <TextView android:gravity="start" android:id="@id/tvAttendancePercentage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" style="@style/BaseTextAppearance.SubTitle" />
+            <TextView android:gravity="end" android:id="@id/tvAttendance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/BaseTextAppearance.SubTitle" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/pb_view_progress" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="8.0dip" android:max="100" android:progressDrawable="@drawable/drawable_view_progress_batch" android:layout_below="@id/cv_thumbnail" app:srcCompat="@drawable/drawable_view_progress_batch" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

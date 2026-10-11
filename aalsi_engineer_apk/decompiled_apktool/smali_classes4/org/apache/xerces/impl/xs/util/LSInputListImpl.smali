@@ -1,0 +1,223 @@
+.class public final Lorg/apache/xerces/impl/xs/util/LSInputListImpl;
+.super Ljava/util/AbstractList;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/xerces/xs/LSInputList;
+
+
+# static fields
+.field public static final EMPTY_LIST:Lorg/apache/xerces/impl/xs/util/LSInputListImpl;
+
+
+# instance fields
+.field private final fArray:[Ld50/b;
+
+.field private final fLength:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;
+
+    const/4 v1, 0x0
+
+    new-array v2, v1, [Ld50/b;
+
+    invoke-direct {v0, v2, v1}, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;-><init>([Ld50/b;I)V
+
+    sput-object v0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->EMPTY_LIST:Lorg/apache/xerces/impl/xs/util/LSInputListImpl;
+
+    return-void
+.end method
+
+.method public constructor <init>([Ld50/b;I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fArray:[Ld50/b;
+
+    .line 5
+    .line 6
+    iput p2, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method private toArray0([Ljava/lang/Object;)V
+    .locals 3
+
+    iget v0, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    if-lez v0, :cond_0
+
+    iget-object v1, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fArray:[Ld50/b;
+
+    const/4 v2, 0x0
+
+    invoke-static {v1, v2, p1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public get(I)Ljava/lang/Object;
+    .locals 3
+
+    if-ltz p1, :cond_0
+
+    iget v0, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    if-ge p1, v0, :cond_0
+
+    iget-object v0, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fArray:[Ld50/b;
+
+    aget-object p1, v0, p1
+
+    return-object p1
+
+    :cond_0
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Index: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public getLength()I
+    .locals 1
+
+    iget v0, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    return v0
+.end method
+
+.method public item(I)Ld50/b;
+    .locals 1
+
+    .line 1
+    if-ltz p1, :cond_1
+
+    .line 2
+    .line 3
+    iget v0, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    .line 4
+    .line 5
+    if-lt p1, v0, :cond_0
+
+    .line 6
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    iget-object v0, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fArray:[Ld50/b;
+
+    .line 9
+    .line 10
+    aget-object p1, v0, p1
+
+    .line 11
+    .line 12
+    return-object p1
+
+    .line 13
+    :cond_1
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 14
+    return-object p1
+.end method
+
+.method public size()I
+    .locals 1
+
+    invoke-virtual {p0}, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->getLength()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public toArray()[Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    invoke-direct {p0, v0}, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->toArray0([Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 2
+
+    .line 2
+    array-length v0, p1
+
+    iget v1, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    if-ge v0, v1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+
+    move-result-object p1
+
+    iget v0, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    invoke-static {p1, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, [Ljava/lang/Object;
+
+    :cond_0
+    invoke-direct {p0, p1}, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->toArray0([Ljava/lang/Object;)V
+
+    array-length v0, p1
+
+    iget v1, p0, Lorg/apache/xerces/impl/xs/util/LSInputListImpl;->fLength:I
+
+    if-le v0, v1, :cond_1
+
+    const/4 v0, 0x0
+
+    aput-object v0, p1, v1
+
+    :cond_1
+    return-object p1
+.end method

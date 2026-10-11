@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_header" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="10.0dip" android:paddingEnd="20.0dip">
+            <ImageView android:id="@id/iv_close" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:tint="@color/colorSecondaryText" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_close_cross" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_heading" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:layout_toRightOf="@id/iv_close" android:layout_centerVertical="true" android:textAllCaps="true" android:paddingStart="20.0dip" android:layout_toEndOf="@id/iv_close" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_clear_all" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_non_caps" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_batches_filter" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+            <View android:background="@color/gray79" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip">
+                <TextView android:textSize="14.0sp" android:id="@id/tv_batches_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/colorPrimary" android:gravity="right" android:id="@id/tv_select_all" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/select_all_caps" android:layout_weight="1.0" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_batches" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_view_more_less" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:textAllCaps="true" android:layout_marginStart="16.0dip" />
+        </LinearLayout>
+        <View android:background="@color/gray79" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_date" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="@string/date" android:textAllCaps="true" />
+            <RadioGroup android:id="@id/radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="5.0dip">
+                <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radio_btn_zero" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="rtl" />
+                <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radio_btn_one" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="rtl" />
+                <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radio_btn_two" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="rtl" />
+                <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radio_btn_three" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="rtl" />
+            </RadioGroup>
+            <View android:background="@color/gray79" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="start|bottom|center" android:id="@id/btn_apply_payment_filter" android:background="@drawable/bg_button_click_color_primary" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="24.0dip" android:text="@string/apply" android:layout_alignParentBottom="true" android:textAllCaps="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

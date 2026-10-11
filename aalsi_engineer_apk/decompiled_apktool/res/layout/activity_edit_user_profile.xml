@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:navigationIcon="@drawable/ic_arrow_back" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:titleTextColor="@color/white">
+        <TextView android:textColor="@color/white" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray66" android:id="@id/tv_description" android:background="@drawable/rounded_corner_warning_bg" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ayp_16dp" android:text="@string/social_media_info" android:drawablePadding="8.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="8.0dip" app:drawableStartCompat="@drawable/ic_info_grey_24" app:drawableTint="@color/gray66" />
+</androidx.appcompat.widget.LinearLayoutCompat>

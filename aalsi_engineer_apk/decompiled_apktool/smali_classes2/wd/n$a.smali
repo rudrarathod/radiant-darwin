@@ -1,0 +1,144 @@
+.class public final Lwd/n$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lwd/n;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private a:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Lwd/g;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Ltr/c;
+        value = "list"
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    .line 1
+    invoke-direct {p0, v0, v1, v0}, Lwd/n$a;-><init>(Ljava/util/ArrayList;ILkotlin/jvm/internal/i;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/ArrayList;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lwd/n$a;->a:Ljava/util/ArrayList;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/util/ArrayList;ILkotlin/jvm/internal/i;)V
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 4
+    :cond_0
+    invoke-direct {p0, p1}, Lwd/n$a;-><init>(Ljava/util/ArrayList;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/util/ArrayList;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lwd/n$a;->a:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lwd/n$a;->a:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    const-string v2, "ListDataModel(data="
+
+    .line 9
+    .line 10
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v0, ")"
+
+    .line 17
+    .line 18
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    return-object v0
+.end method

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="8.0dip" app:cardElevation="8.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/colorPrimaryText" android:gravity="center" android:id="@id/tv_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <co.classplus.app.ui.custom.CustomScrollView android:id="@id/scroll_view_msg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center|left" android:id="@id/tv_message" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </co.classplus.app.ui.custom.CustomScrollView>
+        <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" />
+        <CheckBox android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="center" android:id="@id/cb_accept" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/tv_done" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

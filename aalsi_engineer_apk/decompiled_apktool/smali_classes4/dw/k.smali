@@ -1,0 +1,97 @@
+.class public abstract Ldw/k;
+.super Ldw/g;
+.source "SourceFile"
+
+
+# static fields
+.field public static final d:J
+
+
+# instance fields
+.field public volatile c:J
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    const-class v0, Ldw/k;
+
+    .line 2
+    .line 3
+    const-string v1, "producerIndex"
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Lew/b;->a(Ljava/lang/Class;Ljava/lang/String;)J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    sput-wide v0, Ldw/k;->d:J
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public constructor <init>(I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Ldw/g;-><init>(I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final g()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Ldw/k;->c:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public final i(JJ)Z
+    .locals 8
+
+    .line 1
+    sget-object v0, Lew/b;->c:Lsun/misc/Unsafe;
+
+    .line 2
+    .line 3
+    sget-wide v2, Ldw/k;->d:J
+
+    .line 4
+    .line 5
+    move-object v1, p0
+
+    .line 6
+    move-wide v4, p1
+
+    .line 7
+    move-wide v6, p3
+
+    .line 8
+    invoke-virtual/range {v0 .. v7}, Lsun/misc/Unsafe;->compareAndSwapLong(Ljava/lang/Object;JJJ)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
+
+    .line 12
+    return p1
+.end method

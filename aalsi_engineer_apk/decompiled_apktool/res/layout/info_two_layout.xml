@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/ayp_8dp" android:layout_marginRight="16.0dip" android:layout_marginBottom="@dimen/ayp_8dp">
+        <View android:layout_width="fill_parent" android:layout_height="68.0dip" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/dynamic_card_heading" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ayp_8dp" android:layout_marginBottom="@dimen/ayp_8dp" app:elevation="2.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/bgimage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                    <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginStart="24.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" android:layout_weight="0.7" android:layout_marginStart="16.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:textSize="14.0sp" android:id="@id/tv_subheading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                            <ImageView android:layout_gravity="center" android:id="@id/img_emblem_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ayp_8dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:tint="@color/color_777777" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/link" android:id="@id/tv_emblem" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

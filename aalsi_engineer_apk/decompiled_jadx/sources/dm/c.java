@@ -1,0 +1,18 @@
+package dm;
+
+/* loaded from: classes3.dex */
+public abstract class c {
+    public static c d(Object obj) {
+        return new a(null, obj, d.DEFAULT);
+    }
+
+    public static c e(Object obj) {
+        return new a(null, obj, d.HIGHEST);
+    }
+
+    public abstract Integer a();
+
+    public abstract Object b();
+
+    public abstract d c();
+}

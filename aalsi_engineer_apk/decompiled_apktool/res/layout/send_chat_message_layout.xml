@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutRepliesToggler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:background="@color/orange1" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/replies_are_turned_off" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/replyLayout" android:paddingTop="@dimen/_8sdp" android:paddingBottom="@dimen/_8sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_16sdp" android:elevation="16.0dip">
+        <ImageView android:id="@id/replyMetaImgaePreview" android:visibility="gone" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_50sdp" android:src="@drawable/ic_logo" android:layout_marginEnd="@dimen/_4sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/ts_14sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/parentTextUserName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_30sdp" android:maxLines="1" android:lineSpacingExtra="4.0sp" android:layout_marginStart="@dimen/_8sdp" app:layout_constraintEnd_toStartOf="@id/dismissReplyLayoutImage" app:layout_constraintStart_toEndOf="@id/replyMetaImgaePreview" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/dismissReplyLayoutImage" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/ic_close" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/ts_14sp" android:textColor="@color/black_opaque" android:ellipsize="end" android:id="@id/parentTextReplyingTo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0sp" android:maxLines="2" android:lineSpacingExtra="4.0sp" android:layout_marginStart="@dimen/_8sdp" android:letterSpacing="0.01" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/replyMetaImgaePreview" app:layout_constraintTop_toBottomOf="@id/parentTextUserName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/dividerForReplyingText" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_message_editor" android:background="@color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="@dimen/eight_dp" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/layoutAttachment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_attachment_tilted" android:tint="@color/colorSecondaryText" />
+        </LinearLayout>
+        <EditText android:layout_gravity="center" android:id="@id/editTextChatWindow" android:background="@null" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="60.0dip" android:hint="@string/write_something_here" android:maxLines="4" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/layoutSendVoiceNote" android:padding="@dimen/eight_dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_mic" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/layoutSendChatMessage" android:padding="@dimen/eight_dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_send_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/royalblue" app:srcCompat="@drawable/ic_send_white_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

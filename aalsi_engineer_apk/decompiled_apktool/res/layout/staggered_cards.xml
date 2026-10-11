@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginStart="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginEnd="15.0dip">
+                <View android:background="@color/gray74" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+                <View android:background="@color/gray74" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginEnd="15.0dip">
+                <View android:background="@color/gray74" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+                <View android:background="@color/gray74" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginEnd="15.0dip">
+                <View android:background="@color/gray74" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+                <View android:background="@color/gray74" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/ayp_8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/dynamic_card_heading" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingLeft="12.0dip" android:paddingRight="@dimen/ayp_16dp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ayp_8dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar_home" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin" app:popupTheme="@style/WhiteToolbarTheme" app:theme="@style/ToolbarColoredBackArrow">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_search_home" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dynamicIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="18.0dip">
+                    <ImageView android:id="@id/iv_notification_panel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_notification_bell" />
+                </LinearLayout>
+                <ImageView android:id="@id/iv_search_home" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" app:srcCompat="@drawable/ic_search" />
+                <androidx.appcompat.widget.SearchView android:gravity="center" android:layout_gravity="center" android:id="@id/search_view_home" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" app:iconifiedByDefault="true" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout_home" android:background="@color/colorPrimary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar_home" app:tabIndicatorColor="@color/white" app:tabMode="fixed" />
+        <co.classplus.app.ui.custom.NonSwipableViewPager android:id="@id/view_pager_home" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="56.0dip" android:layout_below="@id/tab_layout_home" />
+        <include android:id="@id/cl_fixed_card" android:visibility="gone" layout="@layout/layout_bottom_fixed_buy_now_card" />
+        <RelativeLayout android:id="@id/rl_bottom_view" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@drawable/ayp_drop_shadow_bottom" android:layout_width="fill_parent" android:layout_height="2.0dip" android:alpha="0.1" />
+                <com.google.android.material.bottomnavigation.BottomNavigationView android:theme="@style/BottomNavigationStyle" android:id="@id/bottom_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:itemIconSize="24.0dip" app:itemTextAppearanceActive="@style/BottomNavigation.ActiveItemTextAppearance" app:itemTextAppearanceInactive="@style/BottomNavigation.InActiveItemTextAppearance" app:labelVisibilityMode="labeled" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/ll_new" android:paddingBottom="30.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_new" android:background="@drawable/shape_rectangle_rounded_red" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/label_new" android:layout_marginStart="20.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab_home" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:layout_above="@id/rl_bottom_view" android:layout_alignParentRight="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" app:backgroundTint="@color/colorAccent" app:fabSize="normal" app:pressedTranslationZ="12.0dip" app:srcCompat="@drawable/ic_add_plus" />
+        <include android:id="@id/ll_retry_layout_new" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_home" layout="@layout/error_states" />
+    </RelativeLayout>
+    <include android:id="@id/ll_common_drawer" layout="@layout/layout_common_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_rectangle_filled_white_outline_blue_r5"
+    android:padding="@dimen/_7sdp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_48sdp"
+    android:foreground="?android:attr/selectableItemBackground">
+    <ImageView
+        android:id="@+id/ivOptionMenu"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_new_menu_option_edit"
+        android:contentDescription="@string/app_name"
+        android:layout_marginStart="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvOptionMenuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivOptionMenu"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/nunito_sans_semi_bold_16_grey"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

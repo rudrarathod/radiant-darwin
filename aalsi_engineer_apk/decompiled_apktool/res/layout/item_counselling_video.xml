@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:foreground="?android:selectableItemBackground" app:cardBackgroundColor="@color/white" app:cardElevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/container_thumbnail" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:id="@id/iv_thumbnail" android:layout_width="fill_parent" android:layout_height="180.0dip" android:src="@drawable/ic_logo_full" android:scaleType="centerCrop" />
+            <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_play" android:tint="@color/white" android:layout_centerInParent="true" android:alpha="0.9" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_video_duration" android:background="@drawable/bg_video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/iv_share" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:tint="@color/white" android:layout_alignParentRight="true" android:alpha="0.9" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_share" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/container_thumbnail">
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorPrimaryText" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

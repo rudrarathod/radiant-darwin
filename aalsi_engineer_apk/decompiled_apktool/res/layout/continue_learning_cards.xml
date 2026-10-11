@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="70.0dip" android:layout_height="wrap_content">
+                <View android:background="@color/gray74" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+                <View android:background="@color/gray74" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="2.0dip" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ayp_8dp" android:layout_marginRight="@dimen/ayp_8dp">
+                <View android:background="@color/gray74" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                <View android:background="@color/gray74" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="4.0dip" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/dynamic_card_heading" />
+        <androidx.cardview.widget.CardView android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" app:cardElevation="2.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+                <com.google.android.material.tabs.TabLayout android:id="@id/dotsLayout" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" app:tabBackground="@drawable/tab_selector" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabPaddingEnd="7.0dip" app:tabPaddingStart="7.0dip" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

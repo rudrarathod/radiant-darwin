@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ayp_16dp" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/ayp_16dp" app:cardCornerRadius="4.0dip" app:cardElevation="2.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:id="@id/rl_left" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <androidx.cardview.widget.CardView android:id="@id/cv_thumbnail" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="4.0dip" app:cardElevation="0.0dip">
+                    <RelativeLayout android:id="@id/rl_thumbnail" android:layout_width="70.0dip" android:layout_height="45.0dip">
+                        <ImageView android:id="@id/iv_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/colorSecondaryText" android:scaleType="centerCrop" android:adjustViewBounds="true" android:foregroundGravity="center" />
+                        <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_play_button_gray" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <ProgressBar android:id="@id/pb_view_progress" android:background="@drawable/drawable_view_progress" android:layout_width="90.0dip" android:layout_height="4.0dip" android:layout_marginTop="5.0dip" android:max="100" android:progressDrawable="@drawable/drawable_view_progress" android:layout_below="@id/cv_thumbnail" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/DE000000" android:id="@id/heading" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/rl_left" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/rl_left" app:layout_constraintTop_toBottomOf="@id/heading">
+                <ImageView android:id="@id/icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/ayp_8dp" />
+                <TextView android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/subHeading" android:paddingTop="2.0dip" android:paddingBottom="@dimen/ayp_2dp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

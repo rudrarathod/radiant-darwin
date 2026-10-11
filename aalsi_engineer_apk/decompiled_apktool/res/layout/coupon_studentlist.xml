@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ayp_8dp" android:layout_below="@id/toolbar">
+        <LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/layout_search" android:background="@drawable/shape_rectangle_filled_white_radius_2" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="8.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="center" android:id="@id/iv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_search" app:tint="@color/colorSecondaryTextAlpha" />
+            <androidx.appcompat.widget.AppCompatEditText android:textSize="14.0sp" android:textColorHint="@color/colorSecondaryText" android:gravity="start|center" android:layout_gravity="center" android:id="@id/et_search" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_students" android:maxLines="1" android:singleLine="true" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray66" android:id="@id/selectedCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ayp_16dp" android:layout_marginTop="@dimen/aya_24dp" android:textAllCaps="true" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ayp_8dp" />
+    </LinearLayout>
+    <include android:id="@id/emptyStateStudent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/coupon_emptystate_studentlist" />
+</RelativeLayout>

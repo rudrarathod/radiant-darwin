@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_item_announcement" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="5.0dip" android:tint="@color/divider" app:srcCompat="@drawable/ic_quote" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_announcement_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ll_image_container">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="start|center|top" android:autoLink="all" android:id="@id/tv_announcement_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" fontPath="fonts/georgia_italic.ttf" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_announcement_details" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:maxLines="2" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_attachment_status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:layout_marginEnd="20.0dip">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_attachment_tilted" android:tint="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/common_footer" android:visibility="gone" layout="@layout/common_footer_layout_gray91" />
+</LinearLayout>

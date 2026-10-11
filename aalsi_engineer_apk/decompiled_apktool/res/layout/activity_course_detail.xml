@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <androidx.core.widget.NestedScrollView android:id="@id/nested_scroll_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_purchase" android:layout_below="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/layout_iv_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@color/shadow_black">
+                    <ImageView android:id="@id/iv_course_cover" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerCrop" />
+                </FrameLayout>
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_cover_course_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_course_overview" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_course_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <LinearLayout android:id="@id/ll_share_course" android:padding="5.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_share_new" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                    <ImageView android:id="@id/iv_clock" android:layout_width="18.0dip" android:layout_height="18.0dip" android:maxWidth="18.0dip" android:maxHeight="18.0dip" android:tint="@color/colorSecondaryText" app:srcCompat="@drawable/ic_clock_time" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:id="@id/tv_timings_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/activity_course_detail_tv_timings_label_text" android:layout_marginStart="10.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_timings" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <co.classplus.app.ui.custom.ExpandableTextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_course_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_read_more" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <RelativeLayout android:gravity="start|center|top" android:layout_gravity="start|center|top" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <ImageView android:id="@id/iv_book" android:layout_width="18.0dip" android:layout_height="18.0dip" android:maxWidth="18.0dip" android:maxHeight="18.0dip" android:tint="@color/colorSecondaryText" android:layout_alignTop="@id/tv_subject_label" android:layout_alignBottom="@id/tv_subject_label" app:srcCompat="@drawable/ic_book" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_subject_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/subject" android:layout_toRightOf="@id/iv_book" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/iv_book" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/tv_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_subject_label" android:layout_alignLeft="@id/tv_subject_label" android:layout_alignStart="@id/tv_subject_label" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="start|center|top" android:layout_gravity="start|center|top" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <ImageView android:id="@id/iv_class" android:layout_width="18.0dip" android:layout_height="18.0dip" android:maxWidth="18.0dip" android:maxHeight="18.0dip" android:tint="@color/colorSecondaryText" android:layout_alignTop="@id/tv_class_label" android:layout_alignBottom="@id/tv_class_label" app:srcCompat="@drawable/ic_group_white" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_class_label" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/course" android:layout_toRightOf="@id/iv_class" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/iv_class" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/tv_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_class_label" android:layout_alignLeft="@id/tv_class_label" android:layout_alignStart="@id/tv_class_label" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_sub_courses_label" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_batches" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_un_purchased" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/price_details" android:textAllCaps="true" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_price_details" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/course_price" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="end|center" android:id="@id/tv_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/discount" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="end|center" android:id="@id/tv_discount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/amount_payable" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="end|center" android:id="@id/tv_final_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_t_c" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_payment_summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorSecondaryText" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_summary" android:textAllCaps="true" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+                <RelativeLayout android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_amount_paid" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/amount_paid" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="end|center" android:id="@id/tv_amount_paid" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_date_purchased" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/ll_amount_paid">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/date" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:gravity="end|center" android:id="@id/tv_date_purchased" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_download_receipt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ll_date_purchased" android:layout_centerHorizontal="true">
+                        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:tint="@color/colorPrimary" app:srcCompat="@drawable/ic_download" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/download_receipt" android:layout_marginStart="5.0dip" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="50.0dip" android:src="@drawable/ic_purchased_stamp" android:layout_marginStart="50.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_purchase" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_purchase" android:background="@drawable/bg_button_click_color_primary" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:textAllCaps="false" />
+    </LinearLayout>
+    <include android:id="@id/layout_no_int_connection" android:visibility="gone" layout="@layout/layout_no_connection" />
+</RelativeLayout>

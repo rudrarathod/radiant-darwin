@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom|center_horizontal"
+    android:id="@+id/networkToastMessages"
+    android:background="@drawable/shape_rectangle_filled_white_outline_gray_r8"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_48sdp">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvNetworkName"
+        android:paddingTop="@dimen/_18sdp"
+        android:paddingBottom="@dimen/_18sdp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_14sdp"
+        android:paddingEnd="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivLoading"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        style="@style/nunito_sans_semi_bold_20_black"/>
+    <ImageView
+        android:id="@+id/ivLoading"
+        android:padding="@dimen/_8sdp"
+        android:focusable="true"
+        android:visibility="visible"
+        android:clickable="true"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_network_failed_loading"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

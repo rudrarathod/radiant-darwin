@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_name" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_edit" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:tint="@color/colorPrimary" app:srcCompat="@drawable/ic_pencil" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_edit" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_installment" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/red3" android:id="@id/tv_date" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/gray79" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fee_amount" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_amount" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/gray79" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/due_date" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_due_date" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/gray79" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center_vertical" android:id="@id/tv_notes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:id="@id/tv_record_payment" android:background="@drawable/shape_rectangle_gray_outline_white_filled_r6" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/layout_bottom_sheet_unpaid_upcoming_details_tv_record_payment_text" android:layout_weight="1.0" android:layout_marginEnd="5.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_send_reminder" android:background="@drawable/bg_button_click_color_primary" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/layout_bottom_sheet_unpaid_upcoming_details_tv_send_reminder_text" android:layout_weight="1.0" android:layout_marginStart="5.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_pay_fees_with_ez_cred" android:background="@drawable/bg_button_click_grey" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="5.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emi_with" android:layout_marginEnd="4.0dip" />
+            <ImageView android:background="@drawable/bg_ezcred" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_pay_fees" android:background="@drawable/bg_button_click_color_primary" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/layout_bottom_sheet_unpaid_upcoming_details_tv_pay_fees_text" android:layout_weight="1.0" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

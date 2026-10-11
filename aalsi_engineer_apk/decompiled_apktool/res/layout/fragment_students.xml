@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:background="@color/gray91" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_add_student">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_students_present" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/search_layout" android:visibility="gone" layout="@layout/common_search" />
+                <View android:id="@id/dividerView" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.75dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_students" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_no_students" android:paddingLeft="@dimen/ayp_16dp" android:paddingRight="@dimen/ayp_16dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/ic_students_empty" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_empty_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/add_your_students" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:gravity="center" android:id="@id/tv_empty_sub_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/common_empty_sub_msg_students" />
+                <FrameLayout android:id="@id/share_whatsapp_fl" android:background="@drawable/bg_btn_share_whatsapp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_whatsapp_outline_iv" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_share_wp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_on_whatsapp" android:layout_marginStart="@dimen/ayp_16dp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_wp_share" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_alignParentBottom="true" android:contentDescription="@string/share_on_whatsapp" android:layout_alignParentEnd="true" app:backgroundTint="@color/green_wp" app:srcCompat="@drawable/ic_whatsapp_outline_iv" />
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/common_progressbar" />
+</RelativeLayout>

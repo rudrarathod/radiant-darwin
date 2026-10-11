@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/common_search_contacts" layout="@layout/common_search" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_contacts" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/common_search_contacts" />
+    <include android:id="@id/progress_bar" android:visibility="visible" layout="@layout/common_progressbar" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_no_contacts" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fragment_select_contacts_tv_no_contacts_text" android:layout_centerInParent="true" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_done" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_done_tick" />
+</RelativeLayout>

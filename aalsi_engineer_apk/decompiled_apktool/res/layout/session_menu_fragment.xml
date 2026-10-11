@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/session_menu_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="10.0dip">
+            <ImageButton android:layout_gravity="end|center" android:id="@id/ibCloseWindow" android:background="?android:selectableItemBackgroundBorderless" android:padding="5.0dip" android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_17sdp" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/_12sdp" android:elevation="10.0dip" app:srcCompat="@drawable/ic_close" />
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabIndicatorColor="@color/colorSkyBlue" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="@dimen/_2sdp" app:tabMode="scrollable" />
+        </FrameLayout>
+        <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentContainerSessionMenu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

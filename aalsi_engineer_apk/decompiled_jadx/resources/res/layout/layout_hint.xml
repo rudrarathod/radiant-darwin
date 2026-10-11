@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/ll_hint"
+    android:background="@drawable/bg_blue_corner_radius_2"
+    android:padding="16dp"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_you_can_add_and_change_these_fields_from_the_student_profile_form_feature_of_website"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/iv_close_hint"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:tint="@color/black"
+        app:srcCompat="@drawable/ic_close_cross"/>
+</LinearLayout>

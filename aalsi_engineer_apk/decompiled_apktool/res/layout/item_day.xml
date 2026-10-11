@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_rectangle_filled_white_r7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginStart="16.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_777777" android:gravity="center_vertical" android:id="@id/tv_day_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAllCaps="true" style="@style/BaseTextAppearance.Title" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/red3" android:id="@id/tv_remove_day" android:paddingLeft="8.0dip" android:paddingTop="16.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/remove" android:textAllCaps="true" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_no_class" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/red3" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/no_class" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_day_timing" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="start|center" android:id="@id/rl_day_from" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/divider_day" android:paddingStart="16.0dip" android:paddingEnd="10.0dip" android:layout_toStartOf="@id/divider_day">
+            <TextView android:id="@id/tv_day_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_day_tv_day_from_text" android:layout_alignParentTop="true" style="@style/BaseTextAppearance.UpperCaseTitle" />
+            <TextView android:id="@id/tv_day_from_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/time_no_caps" android:layout_below="@id/tv_day_from" style="@style/BaseTextAppearance.ShadowTitle" />
+        </RelativeLayout>
+        <View android:id="@id/divider_day" android:background="@color/divider" android:layout_width="0.5dip" android:layout_height="wrap_content" android:layout_alignTop="@id/rl_day_from" android:layout_alignBottom="@id/rl_day_from" android:layout_centerInParent="true" />
+        <RelativeLayout android:gravity="start|center" android:id="@id/rl_day_to" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/divider_day" android:paddingStart="16.0dip" android:paddingEnd="10.0dip" android:layout_toEndOf="@id/divider_day">
+            <TextView android:id="@id/tv_day_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_day_tv_day_to_text" android:layout_alignParentTop="true" style="@style/BaseTextAppearance.UpperCaseTitle" />
+            <TextView android:id="@id/tv_day_to_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/time_no_caps" android:layout_below="@id/tv_day_to" style="@style/BaseTextAppearance.ShadowTitle" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

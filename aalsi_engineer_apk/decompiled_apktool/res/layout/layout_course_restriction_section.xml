@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.SwitchCompat android:textSize="14.0sp" android:id="@id/sw_enable_web" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_video_enable_web" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_D28800" android:id="@id/tv_video_restriction_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/label_enable_web" />
+    <androidx.appcompat.widget.SwitchCompat android:textSize="14.0sp" android:id="@id/sw_video_restriction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/label_enable_restriction" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_video_restriction" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/cb_max_no_view" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/label_max_view" android:singleLine="false" android:layout_weight="1.0" />
+            <CheckBox android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/cb_max_duration" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/label_max_duration" android:singleLine="false" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:enabled="false" android:textSize="14.0sp" android:ellipsize="end" android:id="@id/et_no_of_views" android:background="@drawable/shape_rectangle_gray_outline_white_filled_r4" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:hint="@string/label_hint_max_views" android:maxLines="1" android:maxLength="3" android:digits="\ 1234567890" android:layout_weight="1.0" android:inputType="number" android:layout_marginEnd="8.0dip" />
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/tv_max_views" android:background="@drawable/shape_rectangle_gray_outline_white_filled_r4" android:paddingLeft="16.0dip" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:hint="@string/label_hint_max_duration" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="16.0dip" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_info_secondary" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_course_share_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/label_student_info" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatCheckBox android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/cb_update_existing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/label_update_existing_videos" />
+    </LinearLayout>
+</LinearLayout>

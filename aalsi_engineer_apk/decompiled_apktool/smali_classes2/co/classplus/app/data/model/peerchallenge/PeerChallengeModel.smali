@@ -1,0 +1,59 @@
+.class public final Lco/classplus/app/data/model/peerchallenge/PeerChallengeModel;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final $stable:I = 0x8
+
+
+# instance fields
+.field private scoreboardSummary:Lco/classplus/app/data/model/peerchallenge/ScoreBoardSummary;
+    .annotation runtime Ltr/c;
+        value = "scoreboardSummary"
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getScoreboardSummary()Lco/classplus/app/data/model/peerchallenge/ScoreBoardSummary;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lco/classplus/app/data/model/peerchallenge/PeerChallengeModel;->scoreboardSummary:Lco/classplus/app/data/model/peerchallenge/ScoreBoardSummary;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final setScoreboardSummary(Lco/classplus/app/data/model/peerchallenge/ScoreBoardSummary;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lco/classplus/app/data/model/peerchallenge/PeerChallengeModel;->scoreboardSummary:Lco/classplus/app/data/model/peerchallenge/ScoreBoardSummary;
+
+    .line 2
+    .line 3
+    return-void
+.end method

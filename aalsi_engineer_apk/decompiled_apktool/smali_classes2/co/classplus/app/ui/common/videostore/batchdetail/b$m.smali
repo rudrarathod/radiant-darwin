@@ -1,0 +1,102 @@
+.class public final Lco/classplus/app/ui/common/videostore/batchdetail/b$m;
+.super Lkotlin/jvm/internal/s;
+.source "SourceFile"
+
+# interfaces
+.implements Lpz/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lco/classplus/app/ui/common/videostore/batchdetail/b;->A(I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lco/classplus/app/ui/common/videostore/batchdetail/b;
+
+
+# direct methods
+.method public constructor <init>(Lco/classplus/app/ui/common/videostore/batchdetail/b;)V
+    .locals 0
+
+    iput-object p1, p0, Lco/classplus/app/ui/common/videostore/batchdetail/b$m;->a:Lco/classplus/app/ui/common/videostore/batchdetail/b;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/s;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/lang/Throwable;
+
+    invoke-virtual {p0, p1}, Lco/classplus/app/ui/common/videostore/batchdetail/b$m;->invoke(Ljava/lang/Throwable;)V
+
+    sget-object p1, Lcz/t;->a:Lcz/t;
+
+    return-object p1
+.end method
+
+.method public final invoke(Ljava/lang/Throwable;)V
+    .locals 2
+
+    const-string v0, "throwable"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/r;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object p1, p0, Lco/classplus/app/ui/common/videostore/batchdetail/b$m;->a:Lco/classplus/app/ui/common/videostore/batchdetail/b;
+
+    invoke-virtual {p1}, Lco/classplus/app/ui/base/BasePresenter;->vb()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    .line 3
+    :cond_0
+    iget-object p1, p0, Lco/classplus/app/ui/common/videostore/batchdetail/b$m;->a:Lco/classplus/app/ui/common/videostore/batchdetail/b;
+
+    invoke-virtual {p1}, Lco/classplus/app/ui/base/BasePresenter;->E0()Lco/classplus/app/ui/base/p2;
+
+    move-result-object p1
+
+    check-cast p1, Led/t;
+
+    invoke-interface {p1}, Lco/classplus/app/ui/base/p2;->p7()V
+
+    .line 4
+    iget-object p1, p0, Lco/classplus/app/ui/common/videostore/batchdetail/b$m;->a:Lco/classplus/app/ui/common/videostore/batchdetail/b;
+
+    invoke-virtual {p1}, Lco/classplus/app/ui/base/BasePresenter;->E0()Lco/classplus/app/ui/base/p2;
+
+    move-result-object p1
+
+    check-cast p1, Led/t;
+
+    sget-object v0, Lco/classplus/app/ClassplusApplication;->R:Landroid/content/Context;
+
+    sget v1, Lco/classplus/app/R$string;->something_went_wrong:I
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v0}, Lco/classplus/app/ui/base/p2;->Gb(Ljava/lang/String;)V
+
+    return-void
+.end method

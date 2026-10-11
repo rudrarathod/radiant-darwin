@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bg_primary_color_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/app_bar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/layout_search" android:visibility="gone" layout="@layout/common_search" />
+                    <include android:id="@id/layout_section" layout="@layout/item_sort_select_big" />
+                </LinearLayout>
+                <View android:background="@color/colorSecondaryText" android:layout_width="fill_parent" android:layout_height="0.25dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_enquiries" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@id/cv_tutors" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:cardCornerRadius="20.0dip" app:cardElevation="5.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_dp" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_chevron_down" android:tint="@color/colorSecondaryText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_no_enquiries" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_enquiries_tv_no_enquiries_text" android:layout_centerInParent="true" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab_enquiry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" app:backgroundTint="@color/colorAccent" app:fabSize="normal" app:pressedTranslationZ="12.0dip" app:srcCompat="@drawable/ic_enquiry_action" />
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/ll_help_videos" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="66.0dip" android:layout_alignParentBottom="true" layout="@layout/layout_help_button" />
+</RelativeLayout>

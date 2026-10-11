@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="30dp"
+    android:width="103dp"
+    android:viewportWidth="103"
+    android:viewportHeight="30">
+    <path
+        android:fillColor="@drawable/_bookmark_label_red__0_res_0x7f080006"
+        android:pathData="M0,0H103V20H0V0Z"/>
+    <path
+        android:fillColor="#b30000"
+        android:pathData="M10,20H0L10,30V20Z"/>
+</vector>

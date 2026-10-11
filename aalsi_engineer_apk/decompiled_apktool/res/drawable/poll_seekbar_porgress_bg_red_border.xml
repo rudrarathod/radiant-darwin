@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/progress_shape">
+        <clip>
+            <shape android:shape="rectangle">
+                <stroke android:width="@dimen/_1sdp" android:color="@color/color_F65160" />
+                <size android:height="@dimen/poll_seekbar_height" />
+                <corners android:radius="@dimen/_14sdp" />
+                <solid android:color="@color/color_26F65160" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

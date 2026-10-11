@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="x_answer_sheet">
+        <item quantity="other">답변(%d 파일)</item>
+    </plurals>
+    <plurals name="x_archived_batch">
+        <item quantity="other">%1$d 보관 일괄 처리</item>
+    </plurals>
+    <plurals name="x_attempts_allowed">
+        <item quantity="other">* %d번 시도 허용됨</item>
+    </plurals>
+    <plurals name="x_attempts_remaining">
+        <item quantity="other">* %d개 시도 남음</item>
+    </plurals>
+    <plurals name="x_batch">
+        <item quantity="other">%1$d 배치</item>
+    </plurals>
+    <plurals name="x_files_no">
+        <item quantity="other">"%d
+파일"</item>
+        <item quantity="one">"%d
+파일"</item>
+    </plurals>
+    <plurals name="x_new_notifications">
+        <item quantity="other">%d개의 새 알림</item>
+    </plurals>
+    <plurals name="x_question_paper">
+        <item quantity="other">질문지 - %d 파일</item>
+    </plurals>
+    <plurals name="x_recipients_with_size">
+        <item quantity="other">%d 수신자</item>
+    </plurals>
+    <plurals name="x_test_no">
+        <item quantity="other">"%d
+시험"</item>
+        <item quantity="one">"%d
+시험"</item>
+    </plurals>
+    <plurals name="x_unread_messages">
+        <item quantity="other">읽지 않은 메시지 %d개</item>
+    </plurals>
+    <plurals name="x_videos_no">
+        <item quantity="other">"%d
+비디오"</item>
+        <item quantity="one">"%d
+비디오"</item>
+    </plurals>
+</resources>

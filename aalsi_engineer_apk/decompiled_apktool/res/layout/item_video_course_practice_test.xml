@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="70.0dip" android:layout_height="50.0dip">
+            <ImageView android:id="@id/ivPracticeItemIcon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" android:layout_marginStart="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimaryText" android:ellipsize="end" android:id="@id/tv_practice_test_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginEnd="6.0dip" app:srcCompat="@drawable/ic_clock" app:tint="@color/colorSecondaryText" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/colorSecondaryText" android:ellipsize="end" android:id="@id/tv_practice_start_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="6.0dip" />
+                <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="•" android:layout_marginEnd="6.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/colorSecondaryText" android:ellipsize="end" android:id="@id/tv_practice_end_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+</LinearLayout>

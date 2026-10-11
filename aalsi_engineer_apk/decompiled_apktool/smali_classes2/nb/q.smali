@@ -1,0 +1,36 @@
+.class public final synthetic Lnb/q;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+
+
+# instance fields
+.field public final synthetic a:Lco/classplus/app/ui/common/notifications/create/CreateNotificationsActivity;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lco/classplus/app/ui/common/notifications/create/CreateNotificationsActivity;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lnb/q;->a:Lco/classplus/app/ui/common/notifications/create/CreateNotificationsActivity;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lnb/q;->a:Lco/classplus/app/ui/common/notifications/create/CreateNotificationsActivity;
+
+    invoke-static {v0, p1, p2}, Lco/classplus/app/ui/common/notifications/create/CreateNotificationsActivity;->je(Lco/classplus/app/ui/common/notifications/create/CreateNotificationsActivity;Landroid/widget/CompoundButton;Z)V
+
+    return-void
+.end method

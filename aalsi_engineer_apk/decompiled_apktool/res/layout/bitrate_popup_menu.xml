@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:foreground="?android:selectableItemBackground" android:adjustViewBounds="true" app:cardBackgroundColor="@color/colorSkyBlueTransparent" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip" app:cardMaxElevation="0.0dip" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:id="@id/llDynamicBitrateParent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardElevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/ll_Date1" android:padding="@dimen/ayp_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/couponName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reseller_coupons_item_couponName_text" android:maxLines="1" android:maxEms="15" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorText_Black_Alpha_99" android:ellipsize="end" android:id="@id/couponId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:maxLines="1" android:layout_marginStart="9.0dip" />
+        </LinearLayout>
+        <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

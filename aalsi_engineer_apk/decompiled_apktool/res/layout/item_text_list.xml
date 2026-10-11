@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <ImageView android:id="@id/imgDoubleQuotes" android:background="@drawable/double_quotes" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ayp_16dp" android:layout_toRightOf="@id/imgDoubleQuotes" android:layout_marginStart="@dimen/ayp_16dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="start|center|top" android:id="@id/tv_test_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_777777" android:id="@id/tv_assignee_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="5.0dip" android:maxLines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

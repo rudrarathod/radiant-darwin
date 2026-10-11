@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/card_view_ongoing" android:background="@color/white" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:foreground="?android:selectableItemBackground" app:cardCornerRadius="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_score_ongoing" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/divider_1_ongoing" android:layout_toStartOf="@id/divider_1_ongoing">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_score" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="28.0sp" android:textColor="@color/black" android:id="@id/tv_obtained_marks_ongoing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:id="@id/tv_max_marks_ongoing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/divider_1_ongoing" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_time_taken_ongoing" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/divider_1_ongoing" android:layout_toEndOf="@id/divider_1_ongoing">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_taken" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="28.0sp" android:textColor="@color/black" android:id="@id/tv_time_taken_ongoing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_grade_ongoing" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/divider_3_ongoing" android:layout_toStartOf="@id/divider_3_ongoing">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_grade" />
+                <TextView android:textSize="28.0sp" android:textColor="@color/black" android:id="@id/tv_obtained_grade_ongoing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+            <View android:id="@id/divider_3_ongoing" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/divider_3_ongoing" android:layout_toEndOf="@id/divider_3_ongoing">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorSecondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avg_grade" />
+                <TextView android:textSize="28.0sp" android:textColor="@color/black" android:id="@id/tv_avg_grade_ongoing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <Button android:textSize="16.0sp" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_reattempt_ongoing" android:background="@drawable/bg_round_empty_primary" android:padding="10.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/reattempt_test" android:layout_weight="1.0" android:textAllCaps="false" />
+            <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_view_sol_ongoing" android:background="@drawable/bg_button_click_color_primary" android:padding="10.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/view_report" android:layout_weight="1.0" android:textAllCaps="false" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

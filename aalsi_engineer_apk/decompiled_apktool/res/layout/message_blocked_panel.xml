@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llMessageParent" android:tag="layout/message_blocked_panel_0" android:background="@drawable/message_panel_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/_36sdp" android:layout_margin="@dimen/_8sdp" android:elevation="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.9">
+        <TextView android:textSize="@dimen/primary_text" android:textColor="@color/black" android:textColorHint="@color/black" android:gravity="center" android:id="@id/etEmoji" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutor_blocked_your_chat" android:maxLines="1" android:textAlignment="center" android:autofillHints="Message" />
+    </LinearLayout>
+</LinearLayout>

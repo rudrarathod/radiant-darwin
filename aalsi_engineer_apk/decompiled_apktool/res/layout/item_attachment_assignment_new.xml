@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" app:cardElevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/click" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_photo" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryText" android:ellipsize="end" android:id="@id/tv_name" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+        <ImageView android:id="@id/iv_cross" android:paddingRight="21.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_close_cross_black" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/item_inline_video_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.PlayerView android:id="@id/player_exo" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_margin="5.0dip" android:adjustViewBounds="true" android:minHeight="136.0dip" app:auto_show="true" app:controller_layout_id="@layout/custom_exo_controls_c" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:resize_mode="fill" app:show_buffering="always" app:use_controller="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:id="@id/mainFrame" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivLogo" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/ic_logo_full" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1500:2648" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/ll_retry_layout_new" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/error_states" />
+</androidx.constraintlayout.widget.ConstraintLayout>

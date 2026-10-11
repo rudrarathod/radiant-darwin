@@ -1,0 +1,305 @@
+.class public final Ltx/q3$a;
+.super Ljava/util/concurrent/atomic/AtomicInteger;
+.source "SourceFile"
+
+# interfaces
+.implements Lgx/r;
+.implements Ljx/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ltx/q3;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ltx/q3$a$a;
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x13afb1a8379f6a45L
+
+
+# instance fields
+.field public final a:Lgx/r;
+
+.field public final b:Ljava/util/concurrent/atomic/AtomicReference;
+
+.field public final c:Ltx/q3$a$a;
+
+.field public final d:Lzx/c;
+
+
+# direct methods
+.method public constructor <init>(Lgx/r;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Ltx/q3$a;->a:Lgx/r;
+
+    .line 5
+    .line 6
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 7
+    .line 8
+    invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, Ltx/q3$a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 12
+    .line 13
+    new-instance p1, Ltx/q3$a$a;
+
+    .line 14
+    .line 15
+    invoke-direct {p1, p0}, Ltx/q3$a$a;-><init>(Ltx/q3$a;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object p1, p0, Ltx/q3$a;->c:Ltx/q3$a$a;
+
+    .line 19
+    .line 20
+    new-instance p1, Lzx/c;
+
+    .line 21
+    .line 22
+    invoke-direct {p1}, Lzx/c;-><init>()V
+
+    .line 23
+    .line 24
+    .line 25
+    iput-object p1, p0, Ltx/q3$a;->d:Lzx/c;
+
+    .line 26
+    .line 27
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltx/q3$a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lmx/c;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Ltx/q3$a;->a:Lgx/r;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Ltx/q3$a;->d:Lzx/c;
+
+    .line 9
+    .line 10
+    invoke-static {v0, p0, v1}, Lzx/k;->a(Lgx/r;Ljava/util/concurrent/atomic/AtomicInteger;Lzx/c;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public b(Ljava/lang/Throwable;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltx/q3$a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lmx/c;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Ltx/q3$a;->a:Lgx/r;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Ltx/q3$a;->d:Lzx/c;
+
+    .line 9
+    .line 10
+    invoke-static {v0, p1, p0, v1}, Lzx/k;->c(Lgx/r;Ljava/lang/Throwable;Ljava/util/concurrent/atomic/AtomicInteger;Lzx/c;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public dispose()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ltx/q3$a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lmx/c;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Ltx/q3$a;->c:Ltx/q3$a$a;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lmx/c;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public isDisposed()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ltx/q3$a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljx/b;
+
+    .line 8
+    .line 9
+    invoke-static {v0}, Lmx/c;->isDisposed(Ljx/b;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method public onComplete()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltx/q3$a;->c:Ltx/q3$a$a;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lmx/c;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Ltx/q3$a;->a:Lgx/r;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Ltx/q3$a;->d:Lzx/c;
+
+    .line 9
+    .line 10
+    invoke-static {v0, p0, v1}, Lzx/k;->a(Lgx/r;Ljava/util/concurrent/atomic/AtomicInteger;Lzx/c;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltx/q3$a;->c:Ltx/q3$a$a;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lmx/c;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Ltx/q3$a;->a:Lgx/r;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Ltx/q3$a;->d:Lzx/c;
+
+    .line 9
+    .line 10
+    invoke-static {v0, p1, p0, v1}, Lzx/k;->c(Lgx/r;Ljava/lang/Throwable;Ljava/util/concurrent/atomic/AtomicInteger;Lzx/c;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public onNext(Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltx/q3$a;->a:Lgx/r;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Ltx/q3$a;->d:Lzx/c;
+
+    .line 4
+    .line 5
+    invoke-static {v0, p1, p0, v1}, Lzx/k;->e(Lgx/r;Ljava/lang/Object;Ljava/util/concurrent/atomic/AtomicInteger;Lzx/c;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public onSubscribe(Ljx/b;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ltx/q3$a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p1}, Lmx/c;->setOnce(Ljava/util/concurrent/atomic/AtomicReference;Ljx/b;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

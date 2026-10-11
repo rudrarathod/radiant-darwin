@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dip">
+        <ImageView android:id="@id/iv_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_close" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/filter" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/iv_close" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/grayE5" android:id="@id/tv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/clear" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/view" android:background="@color/grayE5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/colorText_Black_Alpha_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/status_caps" android:layout_marginStart="24.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_filters" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="100.0dip" />
+    <RadioGroup android:id="@id/rg_filters" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_marginStart="24.0dip">
+        <RadioButton android:textSize="16.0sp" android:id="@id/rb_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/layout_status_filter_bottom_sheet_rb_all_text" android:layoutDirection="rtl" android:layout_marginStart="20.0dip" />
+        <RadioButton android:textSize="16.0sp" android:id="@id/rb_submitted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/layout_status_filter_bottom_sheet_rb_submitted_text" android:layoutDirection="rtl" android:layout_marginStart="20.0dip" />
+        <RadioButton android:textSize="16.0sp" android:id="@id/rb_pending" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/layout_status_filter_bottom_sheet_rb_pending_text" android:layoutDirection="rtl" android:layout_marginStart="20.0dip" />
+        <RadioButton android:textSize="16.0sp" android:id="@id/rb_notSubmitted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/layout_status_filter_bottom_sheet_rb_notSubmitted_text" android:layoutDirection="rtl" android:layout_marginStart="20.0dip" />
+        <RadioButton android:textSize="16.0sp" android:id="@id/rb_rejected" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/layout_status_filter_bottom_sheet_rb_rejected_text" android:layoutDirection="rtl" android:layout_marginStart="20.0dip" />
+        <RadioButton android:textSize="16.0sp" android:id="@id/rb_approved" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/layout_status_filter_bottom_sheet_rb_approved_text" android:layoutDirection="rtl" android:layout_marginStart="20.0dip" />
+    </RadioGroup>
+    <View android:background="@color/grayE5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_apply" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_apply" android:background="@drawable/bg_button_click_color_primary" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/apply" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

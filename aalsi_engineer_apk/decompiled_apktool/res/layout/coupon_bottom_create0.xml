@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bottom_sheet_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/ll_sheet_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black_opaque" android:id="@id/tv_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/aya_24dp" android:text="@string/minOrderValue" />
+    </LinearLayout>
+    <View android:id="@id/v_sheet_divider" android:background="@color/gray79" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/ll_sheet_top" />
+    <TextView android:textColor="@color/black_opaque" android:id="@id/textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/aya_24dp" android:text="@string/minOrderValueText" android:layout_below="@id/v_sheet_divider" />
+    <View android:id="@id/tv2" android:background="@color/gray79" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="50.0dip" android:layout_below="@id/textview" />
+    <Button android:textSize="16.0sp" android:textColor="@color/bottomsheet_done_red" android:gravity="center" android:id="@id/tv_apply" android:background="@color/white" android:padding="@dimen/ayp_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/done" android:layout_below="@id/tv2" android:textAllCaps="true" style="@style/Widget.MaterialComponents.Button.TextButton" />
+</RelativeLayout>
